@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import data from "../../data/data"
 
 export default function FeaturedContent() {
   function scrollToTop() {
@@ -9,28 +8,27 @@ export default function FeaturedContent() {
     })
   }
 
-  const FeaturedBlog = ({ card }) => (
-    <Link
-      to={`/blog/${card.category}/${card.id}`}
-      className="text-img-container"
-    >
-      <img
-        src={card.img}
-        alt="Featured Post - Cathy Loerzel's Blog"
-        className="image featured-image shadow mb-4"
-        style={{ width:"100%" }}
-      />
-      <div className="over-img" data-aos="fade-up">
-        <h2>Featured Blog</h2>
-        <h1>{card.title}</h1>
-      </div>
-    </Link>
-  )
+  // const FeaturedBlog = ({ card }) => (
+  //   <Link
+  //     to={`/blog/${card.category}/${card.id}`}
+  //     className="text-img-container"
+  //   >
+  //     <img
+  //       src={card.img}
+  //       alt="Featured Post - Cathy Loerzel's Blog"
+  //       className="image featured-image shadow mb-4"
+  //       style={{ width:"100%" }}
+  //     />
+  //     <div className="over-img" data-aos="fade-up">
+  //       <h2>Featured Blog</h2>
+  //       <h1>{card.title}</h1>
+  //     </div>
+  //   </Link>
+  // )
   
   return (
     <section id="visual-nav" className="cards-section wf-section">
       <h1 className="heading-6">Featured Content</h1>
-      {/* <FeaturedBlog card={data[0]} /> */}
       <div className="w-container" data-aos="fade-up">
         <div className="flex-center">
           <div className="intro-box">
