@@ -108,9 +108,11 @@ a:hover { color: #a69186; }
   width: 100%;
   max-height: 300px;
   object-fit: cover;
+  filter: brightness(60%);
 }
-.featured-text h1 {
-  font-weight: 200;
+.text-img-container:hover { filter: brightness(40%); }
+.featured-text p {
+  font-size: 2rem;
   text-transform: capitalize;
   letter-spacing: 0.12rem;
   position: absolute;
