@@ -106,13 +106,16 @@ a:hover { color: #a69186; }
 }
 .featured-image {
   width: 100%;
-  max-height: 250px;
+  max-height: 300px;
+  object-fit: cover;
 }
-.over-img {
+.featured-text h1 {
+  font-weight: 200;
+  text-transform: capitalize;
+  letter-spacing: 0.12rem;
   position: absolute;
   top: 0%;
-  left: 10%;
-  transform: translate(-50%, -50%);
+  left: 5%;
 }
 .image-blog {
   width: 100%;
