@@ -14,18 +14,26 @@ a:hover { color: #a69186; }
   font-family: 'Cormorant Garamond', sans-serif;
   color: #fff;
   font-size: 45px;
-  line-height: 55px;
+  line-height: 5vw;
 }
 .h1-white.white {
   margin-bottom: 50px;
   font-family: 'Cormorant Garamond', sans-serif;
   color: #fff;
-  font-size: 40px;
+  font-size: 5vw;
+}
+@media screen and (min-width: 1400px) {
+  .h1-white { line-height: 1.5; }
+  .h1-white.white {
+    font-size: 75px;
+    line-height: 1;
+  }
 }
 .h1-white.medium {
   font-size: 40px;
   line-height: 50px;
 }
+
 .heading-6 {
   text-align: center;
 }
@@ -351,7 +359,7 @@ a:hover { color: #a69186; }
   display: -ms-flexbox;
   display: flex;
   width: 44%;
-  height: 50vw;
+  height: 35vw;
   max-width: 720px;
   padding-right: 40px;
   padding-left: 40px;
@@ -570,6 +578,41 @@ a:hover { color: #a69186; }
   width: 45%;
   margin-right: 5%;
 }
+.hero-text-box-2 {
+  position: absolute;
+  top: 0px;
+  right: 500px;
+  bottom: 0px;
+  z-index: 10;
+  display: flex;
+  width: 44%;
+  height: 35vw;
+  max-width: 720px;
+  max-height: 450px;
+  margin-top: 110px;
+  padding-right: 40px;
+  padding-left: 40px;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #b57a47;
+  width: 45%;
+  margin-right: 5%;
+}
+@media screen and (max-width: 991px) {
+  .hero-text-box-2 {
+    right: 350px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero-text-box-2 {
+    right: 250px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .hero-text-box-2 {
+    right: 200px;
+  }
+}
 .hero-flex {
   display: -webkit-box;
   display: -webkit-flex;
@@ -593,6 +636,22 @@ a:hover { color: #a69186; }
   background-position: 0px 27%;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.hero-image-2 {
+  position: relative;
+  right: -250px;
+  width: 70%;
+  height: 675px;
+  background-image: url('https://storage.googleapis.com/cathy-loerzel-img/Abstract-2.jpg');
+  background-position: 0px 27%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
 }
 
 /* ABOUT */

@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="content-wrapper w-container">
         <div className="hero-text-box">
           <div>
-            <h1 className="h1-white white">Co-Founder of The Allender Center, author, speaker, and therapist.</h1>
+            <h1 className="h1-white">Co-Founder of The Allender Center, author, speaker, and therapist.</h1>
             <div className="top-border _20">
               <a
                 href="https://www.zondervan.com/p/redeeming-heartache/"

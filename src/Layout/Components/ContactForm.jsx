@@ -57,81 +57,79 @@ export default function ContactForm() {
         <div className="form-block" data-aos="fade-up">
           <div>Reach out about your speaking engagement or event.</div>
           <div className="top-border _20">
-            <div className="form-block-2 w-form">
-              <form
-                name="wf-form-Contact-Form"
-                className="flex-space"
-                onSubmit={handleSubmit}
-              >
-                <input
-                  type="text"
-                  className="text-field-4 w-input"
-                  maxlength="30"
-                  name="name"
-                  placeholder="your name *"
-                  onChange={handleChange}
-                  value={formData.name}
-                  required
-                />
-                <input
-                  type="text"
-                  className="text-field-4 w-input"
-                  maxlength="256"
-                  name="company"
-                  placeholder="your company"
-                  onChange={handleChange}
-                  value={formData.company}
-                />
-                <input
-                  type="text"
-                  className="text-field-4 w-input"
-                  maxlength="30"
-                  name="phone"
-                  placeholder="your phone #"
-                  onChange={handleChange}
-                  value={formData.phone}
-                />
-                <input
-                  type="text"
-                  className="text-field-4 w-input"
-                  maxlength="256"
-                  name="email"
-                  placeholder="your email *"
-                  onChange={handleChange}
-                  value={formData.email}
-                  required
-                />
-                <textarea
-                  className="textarea-2 w-input"
-                  maxlength="5000"
-                  name="message"
-                  placeholder="description of the event *"
-                  onChange={handleChange}
-                  value={formData.message}
-                  required
-                ></textarea>
-                <input
-                  type="number"
-                  className="text-field-4 w-input"
-                  maxlength="5"
-                  name="audience"
-                  placeholder="audience size"
-                  onChange={handleChange}
-                  value={formData.audience}
-                />
-                <input
-                  type="text"
-                  className="text-field-4 w-input"
-                  maxlength="256"
-                  name="location"
-                  placeholder="location"
-                  onChange={handleChange}
-                  value={formData.location}
-                />
-                <button type="submit" className="submit-button-3 w-button">Let's talk!</button>
-              </form>
-              <ThankYou />
-            </div>
+            <form
+              name="wf-form-Contact-Form"
+              className="flex-space"
+              onSubmit={handleSubmit}
+            >
+              <input
+                type="text"
+                className="text-field-4 w-input"
+                maxlength="30"
+                name="name"
+                placeholder="your name *"
+                onChange={handleChange}
+                value={formData.name}
+                required
+              />
+              <input
+                type="text"
+                className="text-field-4 w-input"
+                maxlength="256"
+                name="company"
+                placeholder="your company"
+                onChange={handleChange}
+                value={formData.company}
+              />
+              <input
+                type="text"
+                className="text-field-4 w-input"
+                maxlength="30"
+                name="phone"
+                placeholder="your phone #"
+                onChange={handleChange}
+                value={formData.phone}
+              />
+              <input
+                type="text"
+                className="text-field-4 w-input"
+                maxlength="256"
+                name="email"
+                placeholder="your email *"
+                onChange={handleChange}
+                value={formData.email}
+                required
+              />
+              <textarea
+                className="textarea-2 w-input"
+                maxlength="5000"
+                name="message"
+                placeholder="description of the event *"
+                onChange={handleChange}
+                value={formData.message}
+                required
+              ></textarea>
+              <input
+                type="number"
+                className="text-field-4 w-input"
+                maxlength="5"
+                name="audience"
+                placeholder="audience size"
+                onChange={handleChange}
+                value={formData.audience}
+              />
+              <input
+                type="text"
+                className="text-field-4 w-input"
+                maxlength="256"
+                name="location"
+                placeholder="location"
+                onChange={handleChange}
+                value={formData.location}
+              />
+              <button type="submit" className="submit-button-3 w-button">Let's talk!</button>
+            </form>
+            <ThankYou />
           </div>
         </div>
       </div>
