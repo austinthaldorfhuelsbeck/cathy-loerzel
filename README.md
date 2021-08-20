@@ -57,6 +57,16 @@ The testimonial object is structured as follows:
 - title: (required) Professional title of the author of the testimonial.
 - message: (required) The testimonial itself.
 
+#### Testimonials - Methods and Routing
+
+The methods and routing for the contact section of the API is as follows:
+
+- GET / - list all testimonials
+- GET /:testimonialId - read a testimonial by ID
+- PUT /:testimonialId - update a testimonial
+- POST / - create a new testimonial
+- DELETE /:testimonialId - delete a testimonial
+
 ### Newsletter Submissions
 
 Responses to this form are sent to Mailchimp, but are backed up in the database.
