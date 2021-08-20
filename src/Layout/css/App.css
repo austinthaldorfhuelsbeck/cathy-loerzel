@@ -34,13 +34,26 @@ a:hover { color: #a69186; }
   line-height: 50px;
 }
 .h1-redeeming {
-  font-size: 5rem;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  line-height: 0;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  padding-top: 2rem;
+  margin-top: none;
+}
+.h1-redeeming-alt {
+  font-size: 3rem;
+  font-weight: 100;
+  font-family: 'Roboto', 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.25rem;
   line-height: 1;
   text-align: center;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.5);
   padding-top: 2rem;
+  margin-top: none;
 }
 .heading-6 {
   text-align: center;
@@ -676,7 +689,7 @@ a:hover { color: #a69186; }
 }
 
 /* REDEEMING HEARTACHE RH SECTION */
-.testimonials-section {
+.rh-section {
   background-color: #afbcb2
 }
 .carousel-root {
@@ -695,16 +708,22 @@ a:hover { color: #a69186; }
 .myCarousel {
   background: #ffffffc0;
   margin-top: 6%;
-  width: 54%;
+  width: 57%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5rem;
-  padding-top: 6%;
+  padding-top: 2%;
   padding-bottom: 8%;
   padding-left: 5%;
   padding-right: 5%;
   border: 1px solid #ddd;
-  height: 286px;
+  height: 20rem;
+}
+@media screen and (max-width: 1210px) {
+  .myCarousel { height: 25rem; }
+}
+@media screen and (max-width: 650px) {
+  .myCarousel { height: 35rem; }
 }
 .carousel .control-dots {
   padding-left: 5px !important;

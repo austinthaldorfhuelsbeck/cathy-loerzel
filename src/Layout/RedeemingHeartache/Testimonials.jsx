@@ -6,6 +6,8 @@ import testimonials from "../../data/testimonials"
 export default function Testimonials() {
   return (
     <div className="testimonials-section">
+      <h1 className="h1-redeeming-alt" data-aos="fade">Praise for</h1>
+      <h1 className="h1-redeeming mb-5">Redeeming <em>Heartache</em></h1>
       <Carousel
         showArrows={true}
         infiniteLoop={true}
