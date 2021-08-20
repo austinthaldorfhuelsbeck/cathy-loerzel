@@ -90,7 +90,11 @@ async function update(req, res) {
   const data = await service.update(res.locals.blog, res.locals.blog.blog_id)
   res.json({ data: data[0] })
 }
-async function destroy(req, res) {}
+async function destroy(req, res, next) {
+  const id = res.locals.blog.blog_id
+  const data = await service.delete(id)
+  res.status(204).json({ data })
+}
 
 module.exports = {
   list: [asyncErrorBoundary(list)],

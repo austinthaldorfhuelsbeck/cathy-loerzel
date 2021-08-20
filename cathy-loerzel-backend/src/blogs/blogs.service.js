@@ -34,7 +34,9 @@ function update(updatedBlog, id) {
     .where({ blog_id: id })
     .update(updatedBlog, "*")
 }
-function destroy(id) {}
+function destroy(id) {
+  return knex("blogs").where({ blog_id: id }).del()
+}
 
 module.exports = {
   list,
