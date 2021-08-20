@@ -14,7 +14,7 @@ a:hover { color: #a69186; }
   font-family: 'Cormorant Garamond', sans-serif;
   color: #fff;
   font-size: 45px;
-  line-height: 55px;
+  line-height: 5vw;
 }
 .h1-white.white {
   margin-bottom: 50px;
@@ -22,10 +22,17 @@ a:hover { color: #a69186; }
   color: #fff;
   font-size: 5vw;
 }
+@media screen and (min-width: 1400px) {
+  .h1-white.white {
+    font-size: 75px;
+    line-height: 1;
+  }
+}
 .h1-white.medium {
   font-size: 40px;
   line-height: 50px;
 }
+
 .heading-6 {
   text-align: center;
 }
@@ -578,8 +585,9 @@ a:hover { color: #a69186; }
   z-index: 10;
   display: flex;
   width: 44%;
-  height: 450px;
+  height: 35vw;
   max-width: 720px;
+  max-height: 450px;
   margin-top: 110px;
   padding-right: 40px;
   padding-left: 40px;
