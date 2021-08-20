@@ -7,6 +7,18 @@ const knex = require("../db/connection")
 function list() {
   return knex("blogs as b").select("*")
 }
+function listCategory(category) {
+  return knex("blogs as b")
+    .select("*")
+    .where({ "b.category": category })
+    .orderBy("b.date")
+}
+function listTopic(topic) {
+  return knex("blogs as b")
+    .select("*")
+    .where({ "b.topic": topic })
+    .orderBy("b.date")
+}
 function create(blog) {
   return knex("blogs")
     .insert(blog)
@@ -26,6 +38,8 @@ function destroy(id) {}
 
 module.exports = {
   list,
+  listCategory,
+  listTopic,
   create,
   read,
   update,

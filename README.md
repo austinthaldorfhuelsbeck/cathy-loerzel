@@ -21,7 +21,7 @@ The blog post object is structured as follows:
 - blog_id (string): PRIMARY This is parameter read by the component from the URL. Unique identifier, required, will be auto generated in dashboard form if not provided.
 - title (string): (required) The unique title of the blog to be displayed.
 - category (string): (required) Currently, categories are: writing, podcasts, teaching.
-- topics (string): (required) A list of topics to categorize the blog, used in sorting cards.
+- topic (string): (required) A topic, to categorize the blog, used in sorting cards.
 - date (date): (required) Date the content was published, MM-DD-YYYY.
 - text (string): (required) The description provided for the card to display, for example the first paragraph of the blog.
 - img (string): (required) The public URL for the banner image for the blog, should be 16x9.
@@ -35,16 +35,12 @@ The blog post object is structured as follows:
 The methods and routing for the blogs section of the API is as follows:
 
 - GET / - list all blogs
-- GET /:blog_id - read a blog by ID
-- GET /:blog_category - list all blogs in a category
-- GET /:blog_topic - list all blogs of a topic
-- PUT /:blog_id - update a blog by ID
 - POST / - create a new blog
-- POST /:blog_category - create a new category
-- POST /:blog_topic - create a new topic
+- GET /category=:blog_category - list all blogs in a category
+- GET /topic=:blog_topic - list all blogs of a topic
+- GET /:blog_id - read a blog by ID
+- PUT /:blog_id - update a blog by ID
 - DELETE /:blog_id - delete a blog by ID
-- DELETE /:blog_category - delete a category
-- DELETE /:blog_topic - delete a topic
 
 ### Testimonials
 

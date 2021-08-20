@@ -5,7 +5,7 @@ exports.up = function (knex) {
     table.string("category")
     table.string("topic")
     table.date("date")
-    table.string("text")
+    table.string("text", 1024)
     table.string("img")
     table.string("content")
     table.string("audio")

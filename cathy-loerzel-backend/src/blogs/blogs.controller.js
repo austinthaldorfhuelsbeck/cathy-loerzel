@@ -29,35 +29,73 @@ async function blogExists(req, res, next) {
     message: `Blog ${req.params.blog_id} cannot be found.`,
   })
 }
+async function isValidBlog(req, res, next) {
+  const blog = { ...req.body }
+  let message = ""
+  if (!blog.title) message += "Title required. "
+  if (!blog.category) message += "Category required. "
+  if (!blog.text) message += "Description required. "
+  if (!blog.img) message += "Image required. "
+  // returns error or sets res.locals
+  if (message !== "") {
+    return next({ status: 400, message })
+  }
+  res.locals.blog = blog
+  return next()
+}
+async function appendData(req, res, next) {
+  const { blog } = res.locals
+  if (!blog.blog_id) {
+    blog.blog_id = blog.title.replace(/\s/g, "-").toLowerCase()
+  }
+  if (!blog.topic) blog.topic = "general"
+  if (!blog.date) {
+    let today = new Date()
+    const dd = String(today.getDate()).padStart(2, "0")
+    const mm = String(today.getMonth() + 1).padStart(2, "0")
+    const yyyy = today.getFullYear()
+    today = mm + "-" + dd + "-" + yyyy
+    blog.date = today
+  }
+  res.locals.blog = blog
+  return next()
+}
 
 /**
  * Handlers for blog resources
  */
 async function list(req, res) {
-  const data = await service.list()
+  const category = req.query.category
+  const topic = req.query.topic
+  let data = []
+  if (category) {
+    data = await service.listCategory(category)
+  } else if (topic) {
+    data = await service.listTopic(topic)
+  } else {
+    data = await service.list()
+  }
   res.json({ data })
 }
-async function listBlogsByCategory(req, res) {}
-async function listBlogsByTopic(req, res) {}
-async function create(req, res) {}
-async function createCategory(req, res) {}
-async function createTopic(req, res) {}
-function read(req, res) {}
-async function update(req, res) {}
+async function create(req, res) {
+  const { blog } = res.locals
+  const data = await service.create(blog)
+  res.status(201).json({ data })
+}
+function read(req, res) {
+  const data = res.locals.blog
+  res.json({ data })
+}
+async function update(req, res) {
+  const data = await service.update(res.locals.blog, res.locals.blog.blog_id)
+  res.json({ data: data[0] })
+}
 async function destroy(req, res) {}
-async function destroyCategory(req, res) {}
-async function destroyTopic(req, res) {}
 
 module.exports = {
   list: [asyncErrorBoundary(list)],
-  listBlogsByCategory,
-  listBlogsByTopic,
-  create,
-  createCategory,
-  createTopic,
-  read,
-  update,
-  destroy,
-  destroyCategory,
-  destroyTopic,
+  create: [asyncErrorBoundary(isValidBlog), appendData, create],
+  read: [asyncErrorBoundary(blogExists), read],
+  update: [asyncErrorBoundary(blogExists), update],
+  delete: [asyncErrorBoundary(blogExists), destroy],
 }
