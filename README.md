@@ -20,7 +20,7 @@ The blog post object is structured as follows:
 
 - id: This is parameter read by the component from the URL. Unique identifier, required, will be auto generated in dashboard form if not provided.
 - title: (required) The unique title of the blog to be displayed.
-- category: (required) Currently, categories are: writing, prodcasts, teaching.
+- category: (required) Currently, categories are: writing, podcasts, teaching.
 - topics: (required) A list of topics to categorize the blog, used in sorting cards.
 - date: (required) Date the content was published, MM-DD-YYYY.
 - text: (required) The description provided for the card to display, for example the first paragraph of the blog.
@@ -35,16 +35,16 @@ The blog post object is structured as follows:
 The methods and routing for the blogs section of the API is as follows:
 
 - GET / - list all blogs
-- GET /:blogId - read a blog by ID
-- GET /:blogCategory - list all blogs in a category
-- GET /:blogTopic - list all blogs of a topic
-- PUT /:blogId - update a blog by ID
+- GET /:blog_id - read a blog by ID
+- GET /:blog_category - list all blogs in a category
+- GET /:blog_topic - list all blogs of a topic
+- PUT /:blog_id - update a blog by ID
 - POST / - create a new blog
-- POST /:blogCategory - create a new category
-- POST /:blogTopic - create a new topic
-- DELETE /:blogId - delete a blog by ID
-- DELETE /:blogCategory - delete a category
-- DELETE /:blogTopic - delete a topic
+- POST /:blog_category - create a new category
+- POST /:blog_topic - create a new topic
+- DELETE /:blog_id - delete a blog by ID
+- DELETE /:blog_category - delete a category
+- DELETE /:blog_topic - delete a topic
 
 ### Testimonials
 
