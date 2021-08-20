@@ -385,7 +385,7 @@ a:hover { color: #a69186; }
   width: 35%;
   height: 60px;
   padding-left: 21px;
-  border-style: solid none solid solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #ceb3cb;
   border-top-left-radius: 3px;

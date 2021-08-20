@@ -14,7 +14,7 @@ export default function NewsletterForm() {
         <div className="_49-column-2">
           <div className="top-border-2 _10">
             <p data-aos="fade-up">Get promotions &amp; updates!</p>
-            <div className="form-block-2 w-form">
+            <div className="form-block-2">
               <Mailchimp
                 action="https://gmail.us5.list-manage.com/subscribe/post?u=07d928836c4bfc5f2ac3958b0&amp;id=da7fe51007"
                 fields={[
