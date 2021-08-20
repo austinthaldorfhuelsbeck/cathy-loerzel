@@ -7,3 +7,16 @@ const methodNotAllowed = require("../errors/methodNotAllowed")
  *
  * @type {Router}
  */
+router
+  .route("/")
+  .get(controller.list)
+  .post(controller.create)
+  .all(methodNotAllowed)
+router
+  .route("/:contactId")
+  .get(controller.read)
+  .put(controller.update)
+  .delete(controller.delete)
+  .all(methodNotAllowed)
+
+module.exports = router
