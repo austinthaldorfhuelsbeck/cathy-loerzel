@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# Cathy Loerzel
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a single-page application designed as a personal website, a blog, and a landing page to promote Cathy Loerzel and her book, Redeeming Heartache. Its origin is as a simple frontend with basic API functionality (two contact forms).
 
-## Available Scripts
+## Custom API Solution
 
-In the project directory, you can run:
+(updated 08-19-2021)
 
-### `npm start`
+A custom API solution is under development for keeping track of various data throughout the site. The API needs to keep track of (at minimum) blog posts, testimonials for "Redeeming Heartache", email addresses from the subscribe form, and all the information submitted in the contact form.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Blogs
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Blogs encompass writing, podcasts, and videos of Cathy's teaching. Each blog is organized by category, and the ability to sort by topic should be added.
 
-### `npm test`
+Blogs click through to an individual blog page, which displays the data for a single post in greater detail for the user to experience. The blog page is designed to display any of these three types of blog, and adjust what is displayed accordingly.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The blog post object is structured as follows:
 
-### `npm run build`
+- id: This is parameter read by the component from the URL. Unique identifier, required, will be auto generated in dashboard form if not provided.
+- title: (required) The unique title of the blog to be displayed.
+- category: (required) Currently, categories are: writing, prodcasts, teaching.
+- topics: (required) A list of topics to categorize the blog, used in sorting cards.
+- date: (required) Date the content was published, MM-DD-YYYY.
+- text: (required) The description provided for the card to display, for example the first paragraph of the blog.
+- img: (required) The banner image for the blog, should be 16x9.
+- content: (required) The HTML of the full content of the post.
+- audio: The public URL for the audio of a podcast post.
+- video: The public URL for the video of a teaching post.
+- url: The clickthrough link for posts which are originally hosted elsewhere.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Testimonials
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Testimonials are used for the Redeeming Heartache landing page. A carousel cycles through cards which are populated from the database.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The testimonial object is structured as follows:
 
-### `npm run eject`
+- id: (required) A unique numerical identifier.
+- name: (required) First and last name of the author of the testimonial.
+- title: (required) Professional title of the author of the testimonial.
+- message: (required) The testimonial itself.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Newsletter Submissions
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Responses to this form are sent to Mailchimp, but are backed up in the database.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The newsletter submission object is structured as follows:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- id: (required) A unique numerical identifier.
+- email: (required) The email address of the subscriber.
+- name: The full name of the subscriber.
 
-## Learn More
+### Contact Form Submissions
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Responses to this form are sent to EmailJS, but are backed up in the database.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The contact form submission object is structured as follows:
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- id: (required) A unique numerical identifier.
+- name: (required) The full name of the individual inquiring.
+- company: The company involved in booking the event.
+- phone: The phone number of the individual inquiring.
+- email: (required) The email address of the individual inquiring.
+- message: (required) The body of the inquiry.
+- audience: A number representing the estimated audience size of the event.
+- location: The location of the event.
