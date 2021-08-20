@@ -57,16 +57,6 @@ The testimonial object is structured as follows:
 - title: (required) Professional title of the author of the testimonial.
 - message: (required) The testimonial itself.
 
-#### Testimonials - Methods and Routing
-
-The methods and routing for the contact section of the API is as follows:
-
-- GET / - list all contacts
-- GET /:contactId - read a contact by ID
-- PUT /:contactId - update a contact's information
-- POST / - create a new contact form submission
-- DELETE /:contactId - delete a contact
-
 ### Newsletter Submissions
 
 Responses to this form are sent to Mailchimp, but are backed up in the database.
@@ -76,6 +66,15 @@ The newsletter submission object is structured as follows:
 - id: (required) A unique numerical identifier.
 - email: (required) The email address of the subscriber.
 - name: The full name of the subscriber.
+
+#### Newsletter - Methods and Routing
+
+The methods and routing for the newsletter section of the API is as follows:
+
+- GET / - list all newsletter subscriptions
+- GET /:newsletterId - read a newsletter subscription by ID
+- POST / - create a new newsletter subscription
+- DELETE /:newsletterId - delete a newsletter subscription
 
 ### Contact Form Submissions
 
@@ -91,3 +90,13 @@ The contact form submission object is structured as follows:
 - message: (required) The body of the inquiry.
 - audience: A number representing the estimated audience size of the event.
 - location: The location of the event.
+
+#### Contact - Methods and Routing
+
+The methods and routing for the contact section of the API is as follows:
+
+- GET / - list all contacts
+- GET /:contactId - read a contact by ID
+- PUT /:contactId - update a contact's information
+- POST / - create a new contact form submission
+- DELETE /:contactId - delete a contact
