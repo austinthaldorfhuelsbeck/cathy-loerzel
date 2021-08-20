@@ -3,8 +3,7 @@ import { Route, Switch } from "react-router-dom"
 import NavBar from "./Components/NavBar"
 
 import Home from "./Home/Home"
-import Blog from "./Blog/Blog"
-import BlogPost from "./Blog/BlogPost"
+import BlogLayout from "./Blog/BlogLayout"
 import Coaching from "./Coaching/Coaching"
 import RedeemingHeartache from "./RedeemingHeartache/RedeemingHeartache.jsx"
 import Contact from "./Contact/Contact"
@@ -21,13 +20,13 @@ export default function Layout() {
           <Home />
         </Route>
         <Route path="/blog/:category/:id">
-          <BlogPost />
+          <BlogLayout />
         </Route>
         <Route path="/blog/:category">
-          <Blog />
+          <BlogLayout />
         </Route>
         <Route path="/blog">
-          <Blog />
+          <BlogLayout />
         </Route>
         <Route path="/coaching">
           <Coaching />

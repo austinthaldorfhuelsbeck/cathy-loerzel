@@ -1,6 +1,22 @@
-import { Link } from "react-router-dom"
+import { useState, useEffect } from "react"
+import { useParams, Link } from "react-router-dom"
 
-export default function BlogPost({ card }) {
+export default function BlogPost() {
+  const API_BASE_URL =
+    process.env.REACT_APP_API_BASE_URL || "http://localhost:5000"
+
+  let { id } = useParams()
+  const [card, setCard] = useState({})
+  const [err, setErr] = useState(null)
+
+  useEffect(() => {
+    let url = `${API_BASE_URL}/blogs/${id}`
+    fetch(url)
+      .then(res => res.json())
+      .then((res) => setCard(res.data))
+      .catch(setErr)
+  }, [API_BASE_URL, id])
+
   const PodcastAside = () => (
     <aside className="center-box">
       <audio
@@ -52,29 +68,33 @@ export default function BlogPost({ card }) {
   )
 
   return (
-    <div className="blog-post">
-      <Link to={`/blog/${card.category}`}>
-        <em>&larr; Back to all {card.category}</em>
-      </Link>
-      <h5>Published on {card.date}</h5>
-      <div className="row">
-        <a href={card.url} target="_blank" rel="noreferrer">
-          <img
-            src={card.img}
-            alt={card.title}
-            className="image-blog"
+    <div className="w-container">
+      {/* <FeaturedContent /> */}
+      <h1>{card.title}</h1>
+      <div className="blog-post">
+        <Link to={`/blog/${card.category}`}>
+          <em>&larr; Back to all {card.category}</em>
+        </Link>
+        <h5>Published on {card.date.slice(0, 10)}</h5>
+        <div className="row">
+          <a href={card.url} target="_blank" rel="noreferrer">
+            <img
+              src={card.img}
+              alt={card.title}
+              className="image-blog"
+            />
+          </a>
+          {card.audio && <PodcastAside />}
+        </div>
+        <div dangerouslySetInnerHTML={{ __html: card.content }} />
+        {card.category === "writing" && (
+            <img
+            src="https://storage.googleapis.com/cathy-loerzel-img/cathy-loerzel-signature.png"
+            alt="Cathy Loerzel"
+            className="signature"
           />
-        </a>
-        {card.audio && <PodcastAside />}
+        )}
       </div>
-      <div dangerouslySetInnerHTML={{ __html: card.content }} />
-      {card.category === "writing" && (
-          <img
-          src="https://storage.googleapis.com/cathy-loerzel-img/cathy-loerzel-signature.png"
-          alt="Cathy Loerzel"
-          className="signature"
-        />
-      )}
     </div>
   )
 }
