@@ -4,6 +4,7 @@ import NavBar from "./Components/NavBar"
 
 import Home from "./Home/Home"
 import Blog from "./Blog/Blog"
+import BlogPost from "./Blog/BlogPost"
 import Coaching from "./Coaching/Coaching"
 import RedeemingHeartache from "./RedeemingHeartache/RedeemingHeartache.jsx"
 import Contact from "./Contact/Contact"
@@ -20,7 +21,7 @@ export default function Layout() {
           <Home />
         </Route>
         <Route path="/blog/:category/:id">
-          <Blog />
+          <BlogPost />
         </Route>
         <Route path="/blog/:category">
           <Blog />

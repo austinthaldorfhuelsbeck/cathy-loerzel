@@ -8,10 +8,7 @@ function list() {
   return knex("blogs as b").select("*")
 }
 function listCategory(category) {
-  return knex("blogs as b")
-    .select("*")
-    .where({ "b.category": category })
-    .orderBy("b.date")
+  return knex("blogs as b").select("*").where({ "b.category": category })
 }
 function listTopic(topic) {
   return knex("blogs as b")

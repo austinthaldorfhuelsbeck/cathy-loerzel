@@ -10,7 +10,7 @@ export default function Card({ card, index }) {
 
   return (
     <Link
-      to={`/blog/${card.category}/${card.id}`}
+      to={`/blog/${card.category}/${card.blog_id}`}
       className="grow"
       key={index}
       onClick={scrollToTop}
