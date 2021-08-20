@@ -23,6 +23,7 @@ a:hover { color: #a69186; }
   font-size: 5vw;
 }
 @media screen and (min-width: 1400px) {
+  .h1-white { line-height: 1.5; }
   .h1-white.white {
     font-size: 75px;
     line-height: 1;
