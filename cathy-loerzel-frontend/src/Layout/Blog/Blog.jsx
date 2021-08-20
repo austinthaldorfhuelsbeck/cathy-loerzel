@@ -19,7 +19,7 @@ export default function Blog({ category, topic }) {
   }, [category, topic])
 
   return (
-    <>
+    <div className="blog-full">
       {err}
       <FeaturedContent />
       {category ? (
@@ -32,6 +32,6 @@ export default function Blog({ category, topic }) {
           <Card card={card} index={index} />
         ))}
       </div>
-    </>
+    </div>
   )
 }

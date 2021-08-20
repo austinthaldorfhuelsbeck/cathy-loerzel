@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom"
 
 import Blog from "./Blog"
+import BlogPost from "./BlogPost"
 import NewsletterForm from "../Components/NewsletterForm"
 import ProductBanner from "../Components/ProductBanner"
 
@@ -22,8 +23,6 @@ export default function BlogPage() {
       />
     </div>
   )
-
-  const BlogPost = () => <div>BLOG POST</div>
 
   return (
     <section id="blog">
