@@ -18,17 +18,17 @@ Blogs click through to an individual blog page, which displays the data for a si
 
 The blog post object is structured as follows:
 
-- id: This is parameter read by the component from the URL. Unique identifier, required, will be auto generated in dashboard form if not provided.
-- title: (required) The unique title of the blog to be displayed.
-- category: (required) Currently, categories are: writing, podcasts, teaching.
-- topics: (required) A list of topics to categorize the blog, used in sorting cards.
-- date: (required) Date the content was published, MM-DD-YYYY.
-- text: (required) The description provided for the card to display, for example the first paragraph of the blog.
-- img: (required) The banner image for the blog, should be 16x9.
-- content: (required) The HTML of the full content of the post.
-- audio: The public URL for the audio of a podcast post.
-- video: The public URL for the video of a teaching post.
-- url: The clickthrough link for posts which are originally hosted elsewhere.
+- blog_id (string): PRIMARY This is parameter read by the component from the URL. Unique identifier, required, will be auto generated in dashboard form if not provided.
+- title (string): (required) The unique title of the blog to be displayed.
+- category (string): (required) Currently, categories are: writing, podcasts, teaching.
+- topics (string): (required) A list of topics to categorize the blog, used in sorting cards.
+- date (date): (required) Date the content was published, MM-DD-YYYY.
+- text (string): (required) The description provided for the card to display, for example the first paragraph of the blog.
+- img (string): (required) The public URL for the banner image for the blog, should be 16x9.
+- content (string): (required) The HTML of the full content of the post.
+- audio (string): The public URL for the audio of a podcast post.
+- video (string): The public URL for the video of a teaching post.
+- url (string): The clickthrough link for posts which are originally hosted elsewhere.
 
 #### Blogs - Methods and Routing
 

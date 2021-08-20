@@ -1,8 +1,19 @@
+exports.up = function (knex) {
+  return knex.schema.createTable("blogs", (table) => {
+    table.string("blog_id").primary()
+    table.string("title")
+    table.string("category")
+    table.string("topics")
+    table.date("date")
+    table.string("text")
+    table.string("img")
+    table.string("content")
+    table.string("audio")
+    table.string("video")
+    table.string("url")
+  })
+}
 
-exports.up = function(knex) {
-  
-};
-
-exports.down = function(knex) {
-  
-};
+exports.down = function (knex) {
+  return knex.schema.dropTable("blogs")
+}
