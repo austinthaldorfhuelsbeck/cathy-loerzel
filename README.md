@@ -30,6 +30,22 @@ The blog post object is structured as follows:
 - video: The public URL for the video of a teaching post.
 - url: The clickthrough link for posts which are originally hosted elsewhere.
 
+#### Blogs - Methods and Routing
+
+The methods and routing for the blogs section of the API is as follows:
+
+- GET / - list all blogs
+- GET /:blogId - read a blog by ID
+- GET /:blogCategory - list all blogs in a category
+- GET /:blogTopic - list all blogs of a topic
+- PUT /:blogId - update a blog by ID
+- POST / - create a new blog
+- POST /:blogCategory - create a new category
+- POST /:blogTopic - create a new topic
+- DELETE /:blogId - delete a blog by ID
+- DELETE /:blogCategory - delete a category
+- DELETE /:blogTopic - delete a topic
+
 ### Testimonials
 
 Testimonials are used for the Redeeming Heartache landing page. A carousel cycles through cards which are populated from the database.
@@ -40,6 +56,16 @@ The testimonial object is structured as follows:
 - name: (required) First and last name of the author of the testimonial.
 - title: (required) Professional title of the author of the testimonial.
 - message: (required) The testimonial itself.
+
+#### Testimonials - Methods and Routing
+
+The methods and routing for the contact section of the API is as follows:
+
+- GET / - list all contacts
+- GET /:contactId - read a contact by ID
+- PUT /:contactId - update a contact's information
+- POST / - create a new contact form submission
+- DELETE /:contactId - delete a contact
 
 ### Newsletter Submissions
 
