@@ -37,6 +37,7 @@ a:hover { color: #a69186; }
   font-size: 5rem;
   text-transform: uppercase;
   letter-spacing: 0.25rem;
+  line-height: 1;
   text-align: center;
   color: rgba(0, 0, 0, 0.8);
   padding-top: 2rem;
@@ -676,7 +677,7 @@ a:hover { color: #a69186; }
 
 /* REDEEMING HEARTACHE RH SECTION */
 .testimonials-section {
-  background-color: #dddcd1
+  background-color: #afbcb2
 }
 .carousel-root {
   width: 64% !important;
@@ -693,7 +694,7 @@ a:hover { color: #a69186; }
 }
 .myCarousel {
   background: #ffffffc0;
-  margin-top: -6%;
+  margin-top: 6%;
   width: 54%;
   margin-left: auto;
   margin-right: auto;
@@ -714,25 +715,26 @@ a:hover { color: #a69186; }
   color: #222;
   font-weight: 100;
   letter-spacing: 0.2px;
+  line-height: 1;
   margin-bottom: 4px;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 17px;
+  font-size: 2.2rem;
 }
 .myCarousel h4 {
   text-transform: uppercase;
   margin-top: 0;
   padding-top: 0;
   font-weight: 500;
-  color: #787878;
-  font-size: 14px;
+  color: #000000b9;
+  font-size: 1rem;
 }
 .myCarousel p {
   font-weight: 100 !important;
   line-height: 29px !important;
   color: #222;
   font-size: 15px;
-  font-family: sans-serif;
+  font-family: 'Roboto', 'Scala Sans', sans-serif;
   max-height: 67px;
 }
 .myCarousel p:before {
