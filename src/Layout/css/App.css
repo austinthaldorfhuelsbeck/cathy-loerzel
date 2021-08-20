@@ -110,7 +110,7 @@ a:hover { color: #a69186; }
   object-fit: cover;
   filter: brightness(60%);
 }
-.text-img-container:hover { filter: brightness(40%); }
+.text-img-container:hover { filter: brightness(80%); }
 .featured-text p {
   font-size: 2rem;
   text-transform: capitalize;
