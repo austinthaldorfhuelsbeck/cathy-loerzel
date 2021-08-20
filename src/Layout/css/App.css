@@ -376,37 +376,37 @@ a:hover { color: #a69186; }
   padding-top: 25px;
   padding-bottom: 25px;
 }
-.form-block-2 {
+.form-block-2 form {
   display: block;
   max-width: 600px;
   margin-bottom: 0px;
 }
-.text-field-2 {
+.form-block-2 input {
   width: 35%;
   height: 60px;
   padding-left: 21px;
-  border-style: solid none solid solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #ceb3cb;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
-.text-field-2::-webkit-input-placeholder {
+.form-block-2 input::-webkit-input-placeholder {
   color: #b99bb6;
   font-size: 19px;
   font-style: italic;
 }
-.text-field-2:-ms-input-placeholder {
+.form-block-2 input:-ms-input-placeholder {
   color: #b99bb6;
   font-size: 19px;
   font-style: italic;
 }
-.text-field-2::-ms-input-placeholder {
+.form-block-2 input::-ms-input-placeholder {
   color: #b99bb6;
   font-size: 19px;
   font-style: italic;
 }
-.text-field-2::placeholder {
+.form-block-2 input::placeholder {
   color: #b99bb6;
   font-size: 19px;
   font-style: italic;
@@ -465,8 +465,8 @@ a:hover { color: #a69186; }
   font-family: Roboto, sans-serif;
   color: #000;
 }
-.submit-button-2 {
-  width: 10%;
+.form-block-2 button {
+  width: 20%;
   height: 60px;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
