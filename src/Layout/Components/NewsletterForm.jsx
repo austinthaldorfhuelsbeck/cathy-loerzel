@@ -17,7 +17,7 @@ export default function NewsletterForm() {
             <div className="top-border _20">
               <div className="form-block-2 w-form">
                 <Mailchimp
-                  action="https://austinthaldorfhuelsbeck.us16.list-manage.com/subscribe/post?u=07d928836c4bfc5f2ac3958b0&amp;id=da7fe51007"
+                  action="https://gmail.us5.list-manage.com/subscribe/post?u=07d928836c4bfc5f2ac3958b0&amp;id=da7fe51007"
                   fields={[
                     {
                       name: "EMAIL",
