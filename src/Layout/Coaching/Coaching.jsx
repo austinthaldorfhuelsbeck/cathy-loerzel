@@ -6,8 +6,8 @@ export default function Coaching() {
   return (
     <div>
       <NewsletterForm />
-      <ProductBanner />
       <FeaturedContent />
+      <ProductBanner />
     </div>
   )
 }
