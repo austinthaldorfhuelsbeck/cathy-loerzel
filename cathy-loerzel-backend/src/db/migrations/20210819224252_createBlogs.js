@@ -3,7 +3,7 @@ exports.up = function (knex) {
     table.string("blog_id").primary()
     table.string("title")
     table.string("category")
-    table.string("topics")
+    table.string("topic")
     table.date("date")
     table.string("text")
     table.string("img")
