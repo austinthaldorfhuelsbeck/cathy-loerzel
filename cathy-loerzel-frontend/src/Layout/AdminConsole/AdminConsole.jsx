@@ -40,6 +40,7 @@ export default function AdminConsole() {
   return (
     <div className="admin-console w-container">
       <h1>Admin Console</h1>
+      {err}
       <BlogTable />
     </div>
   )
