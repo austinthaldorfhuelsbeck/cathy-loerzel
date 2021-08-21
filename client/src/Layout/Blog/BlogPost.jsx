@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 export default function BlogPost({ id }) {
   const [card, setCard] = useState({})
-  const [err, setErr] = useState(null)
+  const [err, setErr] = useState("")
 
   useEffect(() => {
     let url = `${process.env.REACT_APP_API_BASE_URL}/blogs/${id}`

@@ -6,7 +6,7 @@ import Card from "./Card"
 
 export default function Blog({ category, topic }) {
   const [cards, setCards] = useState([])
-  const [err, setErr] = useState(null)
+  const [err, setErr] = useState("")
 
   useEffect(() => {
     let url = `${process.env.REACT_APP_API_BASE_URL}/blogs`
