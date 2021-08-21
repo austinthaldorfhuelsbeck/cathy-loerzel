@@ -58,10 +58,10 @@ The testimonial object is structured as follows:
 The methods and routing for the contact section of the API is as follows:
 
 - GET / - list all testimonials
-- GET /:testimonialId - read a testimonial by ID
-- PUT /:testimonialId - update a testimonial
+- GET /:testimonial_id - read a testimonial by ID
+- PUT /:testimonial_id - update a testimonial
 - POST / - create a new testimonial
-- DELETE /:testimonialId - delete a testimonial
+- DELETE /:testimonial_id - delete a testimonial
 
 ### Newsletter Submissions
 
