@@ -55,9 +55,6 @@ a:hover { color: #a69186; }
   padding-top: 2rem;
   margin-top: none;
 }
-.heading-6 {
-  text-align: center;
-}
 .text-link {
   font-family: 'Cormorant Garamond', sans-serif;
   color: #fff;
@@ -785,14 +782,46 @@ a:hover { color: #a69186; }
 
 /* CARDS NAV */
 .cards-section {
-  padding: 0px 20px 100px 20px;
+  padding: 0px 20px 20px 20px;
 }
 .topic-banner { height: 2rem; }
+
+.circle-color {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+}
 .redeeming-heartache { background-color: #e4cdc2; }
 .leadership { background-color: #934a26; }
 .sexual-abuse { background-color: #a79186; }
 .allender-methodology { background-color: #a8baba; }
 .spiritual-warfare { background-color: #ac612c; }
+
+.category-thumbnails { padding: 2rem 0; }
+
+.category-thumbnails li {
+  padding: 1rem;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+/*--- Cool little trick to get text on top of the images! ---*/
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.over-img {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  font-size: 1.2rem;
+  color: #fff;
+}
+
 .card-body { padding-top: 0px; }
 .intro-box {
   width: 30.3%;
@@ -1011,12 +1040,12 @@ a:hover { color: #a69186; }
 .to-top:hover {
   background-color: #934a26;
 }
-.notice-link {
-  color: #fff;
-}
 
 /* MISC */
 
+.white-text {
+  color: #fff;
+}
 .top-border._20 {
   margin-top: 20px;
   text-align: right;

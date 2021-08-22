@@ -18,18 +18,11 @@ export default function Blog({ category, topic }) {
       .catch(setErr)
   }, [category, topic])
 
-  const TopicSort = () => (
-    <Link to="/blog/topic/redeeming-heartache">
-      Redeeming Heartache
-    </Link>
-  )
-
   return (
     <div className="blog-full">
       {err}
       <FeaturedContent />
-      <TopicSort />
-      {category ? (
+      {(category || topic) ? (
         <Link to="/blog">
           <em>&larr; Back to all blogs</em>
         </Link>

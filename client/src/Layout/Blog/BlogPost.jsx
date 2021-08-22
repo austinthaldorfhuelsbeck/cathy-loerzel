@@ -2,14 +2,14 @@ import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 
 export default function BlogPost({ id }) {
-  const [card, setCard] = useState({})
+  const [blog, setBlog] = useState({})
   const [err, setErr] = useState("")
 
   useEffect(() => {
     let url = `${process.env.REACT_APP_API_BASE_URL}/blogs/${id}`
     fetch(url)
       .then(res => res.json())
-      .then((res) => setCard(res.data))
+      .then((res) => setBlog(res.data))
       .catch(setErr)
   }, [id])
 
@@ -21,10 +21,10 @@ export default function BlogPost({ id }) {
       >
         <source
           type="audio/mpeg"
-          src={card.audio}
+          src={blog.audio}
         />
-        <a href={card.audio}>
-          {card.audio}
+        <a href={blog.audio}>
+          {blog.audio}
         </a>
       </audio>
       <br />
@@ -74,23 +74,28 @@ export default function BlogPost({ id }) {
   return (
     <div className="blog-post w-container">
       {err}
-      <h1>{card.title}</h1>
-      <Link to={`/blog/${card.category}`}>
-        <em>&larr; Back to all {card.category}</em>
-      </Link>
-      <h5>Published on {card.date && card.date.slice(0, 10)}</h5>
+      <h1>{blog.title}</h1>
+      <div className="col-3">
+        <Link to={`/blog/${blog.category}`}>
+          <em>&larr; Back to all {blog.category}</em>
+        </Link>
+        <Link to={`/blog/topic/${blog.topic}`}>
+          <h4 className={`white-text ${blog.topic}`}>{blog.topic}</h4>
+        </Link>
+        <h5>Published on {blog.date && blog.date.slice(0, 10)}</h5>
+      </div>
       <div className="row">
-        <a href={card.url} target="_blank" rel="noreferrer">
+        <a href={blog.url} target="_blank" rel="noreferrer">
           <img
-            src={card.img}
-            alt={card.title}
+            src={blog.img}
+            alt={blog.title}
             className="image-blog"
           />
         </a>
-        {card.audio && <PodcastAside />}
+        {blog.audio && <PodcastAside />}
       </div>
-      <div dangerouslySetInnerHTML={{ __html: card.content }} />
-      {card.category === "writing" && <Signature />}
+      <div dangerouslySetInnerHTML={{ __html: blog.content }} />
+      {blog.category === "writing" && <Signature />}
     </div>
   )
 }
