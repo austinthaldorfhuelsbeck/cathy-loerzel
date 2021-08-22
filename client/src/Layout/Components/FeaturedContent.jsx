@@ -39,7 +39,7 @@ export default function FeaturedContent() {
   ]
 
   const FeaturedBlog = ({ card }) => (
-    <div className="mb-4">
+    (category<div className="mb-4">
       <Link
         to={`/blog/${card.category}/${card.id}`}
         className="text-img-container"
