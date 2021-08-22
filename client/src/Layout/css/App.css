@@ -51,7 +51,7 @@ a:hover { color: #a69186; }
   letter-spacing: 0.25rem;
   line-height: 1;
   text-align: center;
-  color: rgba(255, 255, 255, 0.5);
+  color: #fff;
   padding-top: 2rem;
   margin-top: none;
 }
@@ -566,8 +566,8 @@ a:hover { color: #a69186; }
   right: 0px;
   bottom: 0px;
   height: 44%;
-  background-color: rgba(175, 188, 178, 0.69);
 }
+.bg-bottom, .rh-section { background-color: rgba(175, 188, 178, 0.6); }
 .hero-text-box {
   position: absolute;
   top: 0px;
@@ -686,9 +686,6 @@ a:hover { color: #a69186; }
 }
 
 /* REDEEMING HEARTACHE RH SECTION */
-.rh-section {
-  background-color: #afbcb2
-}
 .carousel-root {
   width: 64% !important;
   margin: auto !important;
