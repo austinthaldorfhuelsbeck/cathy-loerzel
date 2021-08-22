@@ -20,6 +20,9 @@ export default function Layout() {
         <Route exact path="/">
           <Home />
         </Route>
+        <Route path="/blog/topic/:topic">
+          <BlogLayout />
+        </Route>
         <Route path="/blog/:category/:id">
           <BlogLayout />
         </Route>

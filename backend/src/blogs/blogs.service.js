@@ -5,16 +5,19 @@ const knex = require("../db/connection")
  * Create returns a list, of which we only need the first element
  */
 function list() {
-  return knex("blogs as b").select("*")
+  return knex("blogs").select("*").orderBy("order")
 }
 function listCategory(category) {
-  return knex("blogs as b").select("*").where({ "b.category": category })
+  return knex("blogs as b")
+    .select("*")
+    .where({ "b.category": category })
+    .orderBy("b.order")
 }
 function listTopic(topic) {
   return knex("blogs as b")
     .select("*")
     .where({ "b.topic": topic })
-    .orderBy("b.date")
+    .orderBy("b.order")
 }
 function create(blog) {
   return knex("blogs")

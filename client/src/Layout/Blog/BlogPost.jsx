@@ -72,7 +72,7 @@ export default function BlogPost({ id }) {
   )
 
   return (
-    <div className="blog-post">
+    <div className="blog-post w-container">
       {err}
       <h1>{card.title}</h1>
       <Link to={`/blog/${card.category}`}>

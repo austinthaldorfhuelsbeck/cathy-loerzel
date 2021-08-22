@@ -787,6 +787,13 @@ a:hover { color: #a69186; }
 .cards-section {
   padding: 0px 20px 100px 20px;
 }
+.topic-banner { height: 2rem; }
+.redeeming-heartache { background-color: #e4cdc2; }
+.leadership { background-color: #934a26; }
+.sexual-abuse { background-color: #a79186; }
+.allender-methodology { background-color: #a8baba; }
+.spiritual-warfare { background-color: #ac612c; }
+.card-body { padding-top: 0px; }
 .intro-box {
   width: 30.3%;
   margin-right: 3%;
