@@ -17,7 +17,7 @@ app.use(express.json())
 
 // Route handlers
 app.use("/blogs", blogsRouter)
-app.use("/testimonials", testimonialsRouter)
+// app.use("/testimonials", testimonialsRouter)
 // app.use("/newsletter", newsletterRouter)
 // app.use("/contact", contactRouter)
 
