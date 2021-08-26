@@ -1,5 +1,5 @@
 import ContactForm from "../Components/ContactForm"
-import FeaturedContent from "../Components/FeaturedContent"
+import FeaturedContent from "../Components/FeaturedContent/FeaturedContent"
 
 export default function Contact() {
   return (

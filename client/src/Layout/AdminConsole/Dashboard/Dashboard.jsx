@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import BlogsList from "./BlogsList"
+import TopicsList from "./TopicsList"
 
 /**
  *  Defines the Admin Console's dashboard page.
@@ -37,6 +38,7 @@ export default function Dashboard() {
       {topicsError}
       <h2>Dashboard</h2>
       <BlogsList blogs={blogs} />
+      <TopicsList topics={topics} />
     </div>
   )
 }

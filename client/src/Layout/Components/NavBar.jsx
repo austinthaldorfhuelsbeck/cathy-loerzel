@@ -1,49 +1,33 @@
-import { Link } from "react-router-dom"
-import { HashLink } from "react-router-hash-link"
+import { Nav, Navbar, Container, NavDropdown } from "react-bootstrap"
 
 export default function NavBar() {
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    })
-  }
-
   return (
-    <div
-      data-collapse="medium"
-      data-animation="over-left"
-      data-duration="400"
-      id="Top" role="banner"
-      className="w-nav"
-    >
-      <div className="content-wrapper w-container">
-        <Link to="/">
+    <Navbar bg="light" expand="lg">
+      <Container>
+        <Navbar.Brand href="/">
           <img
             src="https://storage.googleapis.com/cathy-loerzel-img/cathy-loerzel-signature.png"
             alt="Cathy Loerzel"
             className="signature"
           />
-        </Link>
-        <nav role="navigation" className="w-nav-menu">
-          <HashLink to="/#about" className="nav-link w-nav-link">About</HashLink>
-          <Link to="/blog" className="nav-link w-nav-link" onClick={scrollToTop}>Blog</Link>
-          <Link to="/coaching" className="nav-link w-nav-link" onClick={scrollToTop}>Coaching</Link>
-          <Link to="/redeeming-heartache" className="nav-link w-nav-link" onClick={scrollToTop}>Redeeming Heartache</Link>
-          <Link to="/contact" className="nav-link w-nav-link" onClick={scrollToTop}>Contact</Link>
-        </nav>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-      </div>
-    </div>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="/#about" className="mx-2">About</Nav.Link>
+            <Nav.Link href="/redeeming-heartache" className="mx-2">Redeeming Heartache</Nav.Link>
+            <NavDropdown title="Offerings" id="basic-nav-dropdown" className="mx-2">
+              <NavDropdown.Item href="/blog/writing">Writing</NavDropdown.Item>
+              <NavDropdown.Item href="/blog/podcasts">Podcasts</NavDropdown.Item>
+              <NavDropdown.Item href="/blog/teaching">Teaching</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="/events">Events</NavDropdown.Item>
+              <NavDropdown.Item href="/coaching">Coaching</NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link href="/contact" className="mx-2">Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   )
 }

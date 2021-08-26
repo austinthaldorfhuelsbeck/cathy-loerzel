@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import data from "../../data/data"
 
 export default function FeaturedContent() {
   function scrollToTop() {
@@ -38,26 +37,6 @@ export default function FeaturedContent() {
     }
   ]
 
-  const FeaturedBlog = ({ card }) => (
-    <div className="mb-4">
-      <Link
-        to={`/blog/${card.category}/${card.id}`}
-        className="text-img-container"
-        onClick={scrollToTop}
-      >
-        <img
-          src={card.img}
-          alt="Featured Post - Cathy Loerzel's Blog"
-          className="image featured-image shadow"
-          style={{ width:"100%" }}
-        />
-        <div className="title-link featured-text">
-          <p>{card.title}</p>
-        </div>
-      </Link>
-    </div>
-  )
-
   const SectionSort = () => (
     <div className="w-container" data-aos="fade-up">
       <div className="flex-center">
@@ -93,7 +72,7 @@ export default function FeaturedContent() {
     <ul className="category-thumbnails flex-container">
       {topics.map((topic) => (
         <li key={topic.id} className="category-item" data-aos="fade-up">
-          <Link to={`/blog/topic/${topic.id}`}>
+          <Link to={`/blog/topic/${topic.id}`} onClick={scrollToTop}>
             <div className={`circle-color ${topic.id}`}></div>
             <h4 className="over-img">{topic.name}</h4>
           </Link>
@@ -105,8 +84,6 @@ export default function FeaturedContent() {
   return (
     <div className="w-container">
       <section id="visual-nav" className="cards-section">
-        <h1>Featured Content</h1>
-        <FeaturedBlog card={data[0]}/>
         <h1>Categories</h1>
         <SectionSort />
         <h1>Topics</h1>

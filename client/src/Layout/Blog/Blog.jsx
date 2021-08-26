@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import {  Link } from "react-router-dom"
 
-import FeaturedContent from "../Components/FeaturedContent"
+import FeaturedContent from "../Components/FeaturedContent/FeaturedContent"
 import Card from "./Card"
 
 export default function Blog({ category, topic }) {
@@ -21,12 +21,12 @@ export default function Blog({ category, topic }) {
   return (
     <div className="blog-full">
       {err}
-      <FeaturedContent />
       {(category || topic) ? (
         <Link to="/blog">
           <em>&larr; Back to all blogs</em>
         </Link>
       ) : ""}
+      <FeaturedContent />
       <div className="flex">
         {blogs.map((blog) => <Card blog={blog} />)}
       </div>
