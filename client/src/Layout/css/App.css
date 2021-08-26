@@ -151,11 +151,15 @@ a:hover { color: #a69186; }
 }
 .signature {
   position: static;
-  max-width: 20%;
-  padding-top: 0.8rem;
+  max-width: 40%;
+  padding-top: 0.5rem;
 }
 
 /* NAV */
+.navbar-brand {
+  height: 100%;
+  max-width: 600px;
+}
 .nav-link {
   overflow: hidden;
   padding-top: 46px;
