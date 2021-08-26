@@ -1,5 +1,6 @@
 import ProductBanner from "../Components/ProductBanner"
 import Testimonials from "./Testimonials"
+import FeaturedBlog from "../Components/FeaturedContent/FeaturedBlog"
 import FeaturedContent from "../Components/FeaturedContent/FeaturedContent"
 
 export default function RedeemingHeartache() {
@@ -9,6 +10,7 @@ export default function RedeemingHeartache() {
         <ProductBanner />
         <Testimonials />
       </section>
+      <FeaturedBlog />
       <FeaturedContent />
     </>
   )
