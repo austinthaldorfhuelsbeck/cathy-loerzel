@@ -77,6 +77,10 @@ async function list(req, res) {
   }
   res.json({ data })
 }
+async function listFeatured(req, res) {
+  let data = await service.listFeatured()
+  res.json({ data })
+}
 async function create(req, res) {
   const { blog } = res.locals
   const data = await service.create(blog)
@@ -98,6 +102,7 @@ async function destroy(req, res, next) {
 
 module.exports = {
   list: [asyncErrorBoundary(list)],
+  listFeatured: [asyncErrorBoundary(listFeatured)],
   create: [asyncErrorBoundary(isValidBlog), appendData, create],
   read: [asyncErrorBoundary(blogExists), read],
   update: [asyncErrorBoundary(blogExists), update],

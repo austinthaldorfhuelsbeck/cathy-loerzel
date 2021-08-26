@@ -19,6 +19,12 @@ function listTopic(topic) {
     .where({ "b.topic": topic })
     .orderBy("b.order")
 }
+function listFeatured() {
+  return knex("blogs as b")
+    .select("*")
+    .where({ "b.featured": true })
+    .orderBy("b.order")
+}
 function create(blog) {
   return knex("blogs")
     .insert(blog)
@@ -42,6 +48,7 @@ module.exports = {
   list,
   listCategory,
   listTopic,
+  listFeatured,
   create,
   read,
   update,

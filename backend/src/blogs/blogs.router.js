@@ -12,6 +12,7 @@ router
   .get(controller.list)
   .post(controller.create)
   .all(methodNotAllowed)
+router.route("/featured").get(controller.listFeatured).all(methodNotAllowed)
 router
   .route("/:blog_id")
   .get(controller.read)
