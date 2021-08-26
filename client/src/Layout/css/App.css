@@ -55,6 +55,9 @@ a:hover { color: #a69186; }
   padding-top: 2rem;
   margin-top: none;
 }
+h3 {
+  font-family: 'Montserrat', sans-serif;
+}
 .text-link {
   font-family: 'Cormorant Garamond', sans-serif;
   color: #fff;
@@ -691,7 +694,7 @@ a:hover { color: #a69186; }
 
 /* REDEEMING HEARTACHE RH SECTION */
 .carousel-root {
-  width: 64% !important;
+  width: 84% !important;
   margin: auto !important;
 }
 .carousel .slide {
@@ -715,7 +718,7 @@ a:hover { color: #a69186; }
   padding-left: 5%;
   padding-right: 5%;
   border: 1px solid #ddd;
-  height: 20rem;
+  height: 25rem;
 }
 .embed-video {
   max-width: 568px;
