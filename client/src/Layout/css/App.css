@@ -1063,6 +1063,10 @@ h3 {
 .top-border._40 {
   margin-top: 40px;
 }
+.lg-title {
+  font-size: 280%;
+  text-transform: uppercase;
+}
 
 .carousel button { color: #000; }
 
