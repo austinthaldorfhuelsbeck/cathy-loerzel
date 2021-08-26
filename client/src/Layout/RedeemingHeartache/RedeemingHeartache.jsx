@@ -29,6 +29,7 @@ export default function RedeemingHeartache() {
           </ul>
           <Testimonials />
           <h3 data-aos="fade-up">Your past pain does not dictate your life. Answer the call to healing and discover your life’s beautiful story and a future of hope and freedom.</h3>
+          <h3 data-aos="fade-up">Don't wait. <a href="https://www.zondervan.com/p/redeeming-heartache/" target="_blank" rel="noreferrer">Pre-order today.</a></h3>
         </div>
       </section>
       <FeaturedBlog />

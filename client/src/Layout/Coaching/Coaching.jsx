@@ -7,11 +7,11 @@ export default function Coaching() {
     <div>
       <img
         src="https://cdn.theallendercenter.org/wp-content/uploads/2016/02/story-workshop-banner-1600x350.jpg"
-        alt="Dan Allender at church"
+        alt="Story Workshop"
         className="image-blog"
       />
       <div className="w-container">
-        <h1>Work with Cathy</h1>
+        <h3 className="lg-title">Work with Cathy</h3>
         <h2>Intensives</h2>
         <p>Depending on her schedule and availability, Cathy can meet with you in an intensive format to do work on your stories of heartache and trauma. These can either be in person or in virtual format. They consist of 12 hours of sessions over 2 days. She can meet with an individual, group, or couple.</p>
         <h2>Leadership and Formational Coaching</h2>
