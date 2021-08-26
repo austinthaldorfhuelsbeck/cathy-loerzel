@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import {  Link } from "react-router-dom"
 
-import FeaturedContent from "../Components/FeaturedContent"
+import FeaturedContent from "../Components/FeaturedContent/FeaturedContent"
 import Card from "./Card"
 
 export default function Blog({ category, topic }) {

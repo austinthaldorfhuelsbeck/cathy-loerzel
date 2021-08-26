@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import data from "../../data/data"
 
 export default function FeaturedContent() {
   function scrollToTop() {
@@ -37,26 +36,6 @@ export default function FeaturedContent() {
       color: "#ac612c"
     }
   ]
-
-  const FeaturedBlog = ({ card }) => (
-    <div className="mb-4">
-      <Link
-        to={`/blog/${card.category}/${card.id}`}
-        className="text-img-container"
-        onClick={scrollToTop}
-      >
-        <img
-          src={card.img}
-          alt="Featured Post - Cathy Loerzel's Blog"
-          className="image featured-image shadow"
-          style={{ width:"100%" }}
-        />
-        <div className="title-link featured-text">
-          <p>{card.title}</p>
-        </div>
-      </Link>
-    </div>
-  )
 
   const SectionSort = () => (
     <div className="w-container" data-aos="fade-up">
@@ -106,7 +85,6 @@ export default function FeaturedContent() {
     <div className="w-container">
       <section id="visual-nav" className="cards-section">
         <h1>Featured Content</h1>
-        <FeaturedBlog card={data[0]}/>
         <h1>Categories</h1>
         <SectionSort />
         <h1>Topics</h1>
