@@ -20,6 +20,7 @@ export default function Footer() {
               <Link to="/blog/podcasts" className="footer-link-alt" onClick={scrollToTop}>&#10551;Podcasts</Link>
               <Link to="/blog/teaching" className="footer-link-alt" onClick={scrollToTop}>&#10551;Teaching</Link>
               <Link to="/redeeming-heartache" className="footer-link" onClick={scrollToTop}>Redeeming Heartache</Link>
+              <Link to="/events" className="footer-link" onClick={scrollToTop}>Events</Link>
               <Link to="/coaching" className="footer-link" onClick={scrollToTop}>Coaching</Link>
               <Link to="/contact" className="footer-link" onClick={scrollToTop}>Contact</Link>
             </div>

@@ -1,13 +1,6 @@
 import { Nav, Navbar, Container, NavDropdown } from "react-bootstrap"
 
 export default function NavBar() {
-  // function scrollToTop() {
-  //   window.scrollTo({
-  //     top: 0,
-  //     behavior: "smooth",
-  //   })
-  // }
-
   return (
     <Navbar bg="light" expand="lg">
       <Container>
@@ -27,6 +20,7 @@ export default function NavBar() {
               <NavDropdown.Item href="/blog/podcasts">Podcasts</NavDropdown.Item>
               <NavDropdown.Item href="/blog/teaching">Teaching</NavDropdown.Item>
               <NavDropdown.Divider />
+              <NavDropdown.Item href="/events">Events</NavDropdown.Item>
               <NavDropdown.Item href="/coaching">Coaching</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/redeeming-heartache" className="mx-2">Redeeming Heartache</Nav.Link>

@@ -72,7 +72,7 @@ export default function FeaturedContent() {
     <ul className="category-thumbnails flex-container">
       {topics.map((topic) => (
         <li key={topic.id} className="category-item" data-aos="fade-up">
-          <Link to={`/blog/topic/${topic.id}`}>
+          <Link to={`/blog/topic/${topic.id}`} onClick={scrollToTop}>
             <div className={`circle-color ${topic.id}`}></div>
             <h4 className="over-img">{topic.name}</h4>
           </Link>
@@ -84,7 +84,6 @@ export default function FeaturedContent() {
   return (
     <div className="w-container">
       <section id="visual-nav" className="cards-section">
-        <h1>Featured Content</h1>
         <h1>Categories</h1>
         <SectionSort />
         <h1>Topics</h1>
