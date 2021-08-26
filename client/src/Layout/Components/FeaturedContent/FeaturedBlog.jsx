@@ -29,7 +29,7 @@ export default function FeaturedBlog() {
     let url = `${process.env.REACT_APP_API_BASE_URL}/blogs/featured`
     fetch(url)
       .then(res => res.json())
-      .then((res) => setFeaturedBlog(res.data))
+      .then((res) => setFeaturedBlog(res.data[0]))
       .catch(setErr)
   }, [])
 
