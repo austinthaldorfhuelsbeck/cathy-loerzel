@@ -12,7 +12,10 @@ export default function AccordionItem({ item }) {
         <div>{isActive ? "-" : "+"}</div>
       </div>
       {isActive && (
-        <div className="accordion-content" dangerouslySetInnerHTML={{ __html: item.text }}></div>
+        <>
+          <h2 className="mx-4">{item.date}</h2>
+          <div className="accordion-content" dangerouslySetInnerHTML={{ __html: item.text }}></div>
+        </>
       )}
     </div>
   )
