@@ -1,13 +1,10 @@
-// import { useState } from "react"
-import { Accordion } from "react-bootstrap"
-
+import Accordion from "../Components/Accordion"
 import NewsletterForm from "../Components/NewsletterForm"
 import ProductBanner from "../Components/ProductBanner"
 import FeaturedContent from "../Components/FeaturedContent/FeaturedContent"
 
 export default function Events() {
-  // const [events, setEvents] = useState([])
-  let events = [
+  let data = [
     {
       title: "Redeeming Heartache Virtual Conference",
       date: "September 18, 2021",
@@ -18,14 +15,6 @@ export default function Events() {
       date: "two"
     }
   ]
-  // setEvents(data)
-
-  // const eventsTable = events.map((event) => (
-  //   <Accordion.Item>
-  //     <Accordion.Header>{event.title}</Accordion.Header>
-  //     <Accordion.Body>{event.date}</Accordion.Body>
-  //   </Accordion.Item>
-  // ))
 
   return (
     <div>
@@ -37,7 +26,7 @@ export default function Events() {
       <div className="w-container">
         <h3 className="lg-title">Upcoming Events</h3>
       </div>
-      {/* <Accordion defaultActiveKey="0" flush>{eventsTable}</Accordion> */}
+      <Accordion data={data} />
       <NewsletterForm />
       <FeaturedContent />
       <ProductBanner />

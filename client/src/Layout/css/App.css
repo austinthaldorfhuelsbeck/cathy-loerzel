@@ -166,6 +166,7 @@ h3 {
   overflow: hidden;
   padding-top: 46px;
   height: 116px;
+  width: auto;
   -webkit-transition: background-color 200ms ease;
   transition: background-color 200ms ease;
   font-family: 'Cormorant Garamond', sans-serif;
@@ -195,6 +196,9 @@ h3 {
 .nav-link-alt.w--current {
   border-bottom: 4px solid #bc796c;
   color: #bc796c;
+}
+@media screen and (max-width: 1400px) {
+  .nav-link { width: 8rem; }
 }
 @media screen and (max-width: 991px) {
   .nav-link .nav-link-alt {
@@ -899,6 +903,28 @@ h3 {
 }
 .card {
   margin: 10px;
+}
+/* EVENTS */
+.accordion {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #00000010;
+}
+.accordion-title:hover {
+  background-color: #00000020;
+}
+.accordion-title,
+.accordion-content {
+  padding: 1rem;
+}
+.accordion-content {
+  background-color: #00000006;
 }
 
 /* CONTACT */
