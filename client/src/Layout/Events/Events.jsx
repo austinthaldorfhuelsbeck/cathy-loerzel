@@ -1,4 +1,4 @@
-import Accordion from "../Components/Accordion"
+import AccordionItem from "../Components/AccordionItem"
 import NewsletterForm from "../Components/NewsletterForm"
 import ProductBanner from "../Components/ProductBanner"
 import FeaturedContent from "../Components/FeaturedContent/FeaturedContent"
@@ -26,7 +26,11 @@ export default function Events() {
       <div className="w-container">
         <h3 className="lg-title">Upcoming Events</h3>
       </div>
-      <Accordion data={data} />
+      <div className="accordion">
+        {data.map((event) => (
+          <AccordionItem key={event.title} item={event} />
+        ))}
+      </div>
       <NewsletterForm />
       <FeaturedContent />
       <ProductBanner />
