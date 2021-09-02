@@ -2,7 +2,7 @@
 
 This project is a single-page application designed as a personal website, a blog, and a landing page to promote Cathy Loerzel and her book, Redeeming Heartache. Its origin is as a simple frontend with basic API functionality (two contact forms).
 
-### The current deployment is available [here](https://cathy-loerzel.vercel.app/).
+### The current deployment is available [here](https://cathy-loerzel-client.herokuapp.com/).
 
 ## Custom API Solution
 
