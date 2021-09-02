@@ -25,7 +25,7 @@ export default function FeaturedBlog() {
       {err}
       <h1>Featured Blog</h1>
       <Link
-        to={`/blog/${featuredBlog.category}/${featuredBlog.id}`}
+        to={`/blog/${featuredBlog.category}/${featuredBlog.blog_id}`}
         className="text-img-container"
         onClick={scrollToTop}
       >
