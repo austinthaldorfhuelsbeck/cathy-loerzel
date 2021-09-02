@@ -50,20 +50,41 @@ Testimonials are used for the Redeeming Heartache landing page. A carousel cycle
 
 The testimonial object is structured as follows:
 
-- testimonial_id: (required) A unique numerical identifier.
-- name: (required) First and last name of the author of the testimonial.
-- title: (required) Professional title of the author of the testimonial.
-- message: (required) The testimonial itself.
+- testimonial_id (integer): (required) A unique numerical identifier.
+- name (string): (required) First and last name of the author of the testimonial.
+- title (string): (required) Professional title of the author of the testimonial.
+- message (string, 1000): (required) The testimonial itself.
 
 #### Testimonials - Methods and Routing
 
-The methods and routing for the contact section of the API is as follows:
+The methods and routing for the testimonials section of the API is as follows:
 
 - GET / - list all testimonials
 - GET /:testimonial_id - read a testimonial by ID
 - PUT /:testimonial_id - update a testimonial
 - POST / - create a new testimonial
 - DELETE /:testimonial_id - delete a testimonial
+
+### Events
+
+Events are used for the Upcoming Events component. An accordion displays details for events which are populated from the database.
+
+The event object is structured as follows:
+
+- event_id (integer): (required) A unique numerical identifier.
+- name (string): (required) Name of the upcoming event.
+- date (date): (required) Date of the upcoming event.
+- content (string): (required) The HTML of the full content of the post.
+
+#### Events - Methods and Routing
+
+The methods and routing for the events section of the API is as follows:
+
+- GET / - list all events
+- GET /:event_id - read an event by ID
+- PUT /:event_id - update an event
+- POST / - create a new event
+- DELETE /:event_id - delete an event
 
 ### Newsletter Submissions
 
