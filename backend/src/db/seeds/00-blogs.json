@@ -57,8 +57,36 @@
     "content": ""
   },
   {
-    "blog_id": "complexities-in-leadership-part-one",
+    "blog_id": "conflict-in-relationships",
     "order": 5,
+    "title": "Conflict in Relationships",
+    "category": "podcast",
+    "topic": "allender-methodology",
+    "date": "02-19-2021",
+    "text": "There is no doubt that we are living in a time that heightens levels of conflict and contention in our relationships. Having just finished a one-day conference on this topic, Dr. Dan Allender and Cathy Loerzel talk today on the podcast about their recent, personal experiences with conflict, particularly in this pandemic era. In this season, the ways we engage and relate to conflict look different. You’ll hear Dan and Cathy talk about the reality of this conflict, what we can learn from our styles of relating in conflict, and how, underneath it all, is a deep-seated war with desire.",
+    "img": "https://cdn.theallendercenter.org/wp-content/uploads/2021/02/etienne-boulanger-erCPgyXNlto-unsplash-1536x1025.jpg",
+    "audio": "https://traffic.libsyn.com/secure/theallendercenter/TAC324-ConflictConnection1-v1.mp3",
+    "video": "",
+    "url": "https://theallendercenter.org/2021/02/conflict-relationships/",
+    "content": ""
+  },
+  {
+    "blog_id": "connection-in-relationships",
+    "order": 6,
+    "title": "Connection in Relationships",
+    "category": "podcast",
+    "topic": "allender-methodology",
+    "date": "02-26-2021",
+    "text": "Picking up their conversation from last week, Dan and Cathy turn their attention to uncovering the roots of conflict in relationships and how we can move towards true connection. Oftentimes conflict arises because we cannot name what we truly need, or we cannot see past our own contempt—ultimately there is something keeping us from seeing the other well. Redemption is possible, but we must be willing to engage our conflict in a way we’ve not experienced before.",
+    "img": "https://cdn.theallendercenter.org/wp-content/uploads/2021/02/Conflict-Connection-Podcast-imageop7-1536x864.jpg",
+    "audio": "https://traffic.libsyn.com/secure/theallendercenter/TAC325-ConflictConnection2-v1.mp3",
+    "video": "",
+    "url": "https://theallendercenter.org/2021/02/connection-relationships/",
+    "content": ""
+  },
+  {
+    "blog_id": "complexities-in-leadership-part-one",
+    "order": 7,
     "title": "Complexities in Leadership, Part One",
     "category": "podcasts",
     "topic": "leadership",
@@ -72,7 +100,7 @@
   },
   {
     "blog_id": "complexities-in-leadership-part-two",
-    "order": 6,
+    "order": 8,
     "title": "Complexities in Leadership, Part Two",
     "category": "podcasts",
     "topic": "leadership",
@@ -86,7 +114,7 @@
   },
   {
     "blog_id": "how-story-work-can-heal-the-heart",
-    "order": 7,
+    "order": 9,
     "title": "How Story Work Can Heal the Heart",
     "category": "podcasts",
     "topic": "allender-methodology",
@@ -100,7 +128,7 @@
   },
   {
     "blog_id": "how-to-engage-your-story-in-a-way-that-brings-healing",
-    "order": 8,
+    "order": 10,
     "title": "How To Engage Your Story In A Way That Brings Healing",
     "category": "podcasts",
     "topic": "allender-methodology",
@@ -114,7 +142,7 @@
   },
   {
     "blog_id": "warfare-part-9-soul-ties",
-    "order": 9,
+    "order": 11,
     "title": "Warfare Part 9: Soul Ties",
     "category": "podcasts",
     "topic": "spiritual-warfare",
@@ -128,7 +156,7 @@
   },
   {
     "blog_id": "warfare-part-8-curses-agreements-and-vows",
-    "order": 10,
+    "order": 12,
     "title": "Warfare Part 8: Curses, Agreements, and Vows",
     "category": "podcasts",
     "topic": "spiritual-warfare",
@@ -141,8 +169,36 @@
     "content": ""
   },
   {
+    "blog_id": "womens-sexuality-1",
+    "order": 13,
+    "title": "What Women Wish Men Knew about Women’s Sexuality",
+    "category": "podcasts",
+    "topic": "sexual-abuse",
+    "date": "01-31-2020",
+    "text": "Dr. Dan Allender and Rachael Clinton Chen are joined by guests Cathy Loerzel, Executive VP of The Allender Center and Christy Bauman, author of Theology of the Womb, to have a vulnerable discussion about what women wish men knew about women’s sexuality.",
+    "img": "https://cdn.theallendercenter.org/wp-content/uploads/2020/01/WomensSexuality.jpg",
+    "audio": "http://traffic.libsyn.com/theallendercenter/TAC267_Womens_Sexuality-1.mp3",
+    "video": "",
+    "url": "https://theallendercenter.org/2020/01/womens-sexuality-1/",
+    "content": ""
+  },
+  {
+    "blog_id": "womens-sexuality-2",
+    "order": 14,
+    "title": "What Women Wish Women Knew about Women’s Sexuality",
+    "category": "podcasts",
+    "topic": "sexual-abuse",
+    "date": "02-06-2020",
+    "text": "Rachael Clinton Chen leads an open and honest conversation with Cathy Loerzel and Christy Bauman about what they wish other women knew about women’s sexuality.",
+    "img": "https://cdn.theallendercenter.org/wp-content/uploads/2020/02/Womens_sexuality2.jpg",
+    "audio": "http://traffic.libsyn.com/theallendercenter/TAC270_Womens_Sexuality-2.mp3",
+    "video": "",
+    "url": "https://theallendercenter.org/2020/02/womens-sexuality-2/",
+    "content": ""
+  },
+  {
     "blog_id": "new-year-new-you-and-other-lies-we-believe",
-    "order": 11,
+    "order": 15,
     "title": "New Year, New You and Other Lies We Believe",
     "category": "writing",
     "topic": "spiritual-warfare",
@@ -156,7 +212,7 @@
   },
   {
     "blog_id": "story-sage-part-one",
-    "order": 12,
+    "order": 16,
     "title": "Story Sage, Part One",
     "category": "podcasts",
     "topic": "allender-methodology",
@@ -170,7 +226,7 @@
   },
   {
     "blog_id": "story-sage-part-two",
-    "order": 13,
+    "order": 17,
     "title": "Story Sage, Part Two",
     "category": "podcasts",
     "topic": "allender-methodology",
@@ -184,7 +240,7 @@
   },
   {
     "blog_id": "story-sage-part-three",
-    "order": 14,
+    "order": 18,
     "title": "Story Sage, Part Three",
     "category": "podcasts",
     "topic": "allender-methodology",
@@ -198,7 +254,7 @@
   },
   {
     "blog_id": "healing-the-wounded-heart-part-one",
-    "order": 15,
+    "order": 19,
     "title": "The Power of Community: Healing the Wounded Heart, Part One",
     "category": "podcasts",
     "topic": "sexual-abuse",
@@ -212,7 +268,7 @@
   },
   {
     "blog_id": "healing-the-wounded-heart-part-two",
-    "order": 16,
+    "order": 20,
     "title": "Processing by Active Participation: Healing the Wounded Heart, Part Two",
     "category": "podcasts",
     "topic": "sexual-abuse",
@@ -226,7 +282,7 @@
   },
   {
     "blog_id": "goodbye-old-friend",
-    "order": 17,
+    "order": 21,
     "title": "Goodbye Old Friend",
     "category": "writing",
     "topic": "leadership",
@@ -240,7 +296,7 @@
   },
   {
     "blog_id": "able-to-love-willing-to-grieve-part-two",
-    "order": 19,
+    "order": 22,
     "title": "Able to Love, Willing to Grieve, Part Two",
     "category": "writing",
     "topic": "leadership",
@@ -254,7 +310,7 @@
   },
   {
     "blog_id": "able-to-love-willing-to-grieve-part-one",
-    "order": 18,
+    "order": 23,
     "title": "Able to Love, Willing to Grieve, Part One",
     "category": "writing",
     "topic": "leadership",
@@ -268,7 +324,7 @@
   },
   {
     "blog_id": "training-wounded-healers-part-one",
-    "order": 20,
+    "order": 24,
     "title": "Training Wounded Healers, Part One",
     "category": "podcasts",
     "topic": "leadership",
@@ -282,7 +338,7 @@
   },
   {
     "blog_id": "training-wounded-healers-part-three",
-    "order": 21,
+    "order": 25,
     "title": "Training Wounded Healers, Part Three",
     "category": "podcasts",
     "topic": "leadership",
@@ -296,7 +352,7 @@
   },
   {
     "blog_id": "trauma-and-memory-in-the-tale-part-one",
-    "order": 22,
+    "order": 26,
     "title": "Trauma and Memory in The Tale, Part One",
     "category": "podcasts",
     "topic": "allender-methodology",
@@ -310,7 +366,7 @@
   },
   {
     "blog_id": "trauma-and-memory-in-the-tale-part-two",
-    "order": 23,
+    "order": 27,
     "title": "Trauma and Memory in The Tale, Part Two",
     "category": "podcasts",
     "topic": "allender-methodology",
@@ -323,17 +379,17 @@
     "content": ""
   },
   {
-    "blog_id": "sample-teaching",
-    "order": 24,
-    "title": "Lorem Ipsum",
-    "category": "teaching",
-    "topic": "sexual-abuse",
-    "date": "11-02-2018",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur egestas tortor, venenatis pellentesque ipsum luctus pharetra. Mauris elementum turpis et metus elementum imperdiet tempor nec nisl. Pellentesque consequat at nulla ac accumsan. Nulla id dui sollicitudin, lobortis erat vel, interdum est. Etiam efficitur ut arcu sagittis varius. Aenean tellus tellus, blandit in scelerisque luctus, volutpat id massa. Aenean posuere mi quis tellus pharetra lobortis. Integer imperdiet aliquam erat interdum suscipit. Duis hendrerit, metus non lobortis pellentesque, eros tortor iaculis mauris, consequat feugiat lorem lectus eget massa.",
-    "img": "https://cdn.theallendercenter.org/wp-content/uploads/2018/10/The-Tale-Jennifer-Fox.png",
-    "audio": "http://traffic.libsyn.com/theallendercenter/TAC207_Trauma_and_Memory_in_The_Tale_Part_Two.mp3",
+    "blog_id": "moving-into-grief",
+    "order": 28,
+    "title": "Moving into Grief",
+    "category": "blogs",
+    "topic": "leadership",
+    "date": "12-30-2014",
+    "text": "I am in the middle of moving, over Christmas, with a one-year-old baby, and I don’t wanna. I mean, I do—it is an amazing gift to our family to be able to move from our cramped townhouse into a beautiful house with a huge yard for our very active son to play in. We are thrilled and I want to cry. There are many reasons for this. First, moving is just hard—regardless of your circumstances. It is laborious, tedious, expensive, and fraught with details that would drive anyone mad. Second, it means change—deep change. And for those of us who like comfort and routine, this change can be undoing to the core.",
+    "img": "https://cdn.theallendercenter.org/wp-content/uploads/2014/12/steam.jpg",
+    "audio": "",
     "video": "",
-    "url": "https://theallendercenter.org/2018/11/trauma-memory-the-tale-2/",
+    "url": "https://theallendercenter.org/2014/12/moving-grief/",
     "content": ""
   }
 ]
