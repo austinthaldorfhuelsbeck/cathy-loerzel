@@ -50,7 +50,7 @@ Testimonials are used for the Redeeming Heartache landing page. A carousel cycle
 
 The testimonial object is structured as follows:
 
-- id: (required) A unique numerical identifier.
+- testimonial_id: (required) A unique numerical identifier.
 - name: (required) First and last name of the author of the testimonial.
 - title: (required) Professional title of the author of the testimonial.
 - message: (required) The testimonial itself.
