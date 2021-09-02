@@ -1,9 +1,17 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
+import { useHistory } from "react-router-dom"
 import emailjs from 'emailjs-com'
 import{ init } from 'emailjs-com'
 init("user_CvpPf1sJ7rZo6giCrFhIr")
 
 export default function ContactForm() {
+  const [isActive, setIsActive] = useState(false)
+  // Title active only on home page
+  const history = useHistory()
+  useEffect(() => {
+    if (history.location.pathname === "/") setIsActive(true)
+  }, [history])
+
   // FORM STATE
   const initialFormState = {
     name: "",
@@ -53,7 +61,9 @@ export default function ContactForm() {
   return (
     <div id="contact-form" className="content-section-alt wf-section">
       <div className="section-bg-flex-center">
-        <h3 className="lg-title mt-5">Contact</h3>
+        {isActive && (
+          <h3 className="lg-title mt-5">Contact</h3>
+        )}
         <div className="_25-column"></div>
         <div className="form-block" data-aos="fade-up">
           <div>Reach out about your speaking engagement or event.</div>

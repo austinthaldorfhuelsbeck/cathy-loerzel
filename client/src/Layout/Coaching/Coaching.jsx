@@ -1,3 +1,4 @@
+import ContactForm from "../Components/ContactForm"
 import NewsletterForm from "../Components/NewsletterForm"
 import ProductBanner from "../Components/ProductBanner"
 import FeaturedContent from "../Components/FeaturedContent/FeaturedContent"
@@ -21,6 +22,7 @@ export default function Coaching() {
         <h2>Speaking/Teaching</h2>
         <p>Cathy is available to speak to your community, church, or organization. She teaches on trauma, story and healing, spiritual warfare, and her hallmark model called the “U-Diagram” on the trajectory of healing the human heart.</p>
       </div>
+      <ContactForm />
       <NewsletterForm />
       <FeaturedContent />
       <ProductBanner />
