@@ -45,15 +45,17 @@ a:hover { color: #a69186; }
 }
 .h1-redeeming-alt {
   font-size: 3rem;
-  font-weight: 100;
-  font-family: 'Roboto', 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  font-weight: 300;
+  font-family: 'Montserrat', 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.25rem;
   line-height: 1;
   text-align: center;
-  color: #fff;
   padding-top: 2rem;
   margin-top: none;
+}
+h3 {
+  font-family: 'Montserrat', sans-serif;
 }
 .text-link {
   font-family: 'Cormorant Garamond', sans-serif;
@@ -164,6 +166,7 @@ a:hover { color: #a69186; }
   overflow: hidden;
   padding-top: 46px;
   height: 116px;
+  width: auto;
   -webkit-transition: background-color 200ms ease;
   transition: background-color 200ms ease;
   font-family: 'Cormorant Garamond', sans-serif;
@@ -193,6 +196,9 @@ a:hover { color: #a69186; }
 .nav-link-alt.w--current {
   border-bottom: 4px solid #bc796c;
   color: #bc796c;
+}
+@media screen and (max-width: 1400px) {
+  .nav-link { width: 8rem; }
 }
 @media screen and (max-width: 991px) {
   .nav-link .nav-link-alt {
@@ -571,7 +577,7 @@ a:hover { color: #a69186; }
   bottom: 0px;
   height: 44%;
 }
-.bg-bottom, .rh-section { background-color: rgba(175, 188, 178, 0.6); }
+.bg-bottom { background-color: rgba(175, 188, 178, 0.6); }
 .hero-text-box {
   position: absolute;
   top: 0px;
@@ -691,7 +697,7 @@ a:hover { color: #a69186; }
 
 /* REDEEMING HEARTACHE RH SECTION */
 .carousel-root {
-  width: 64% !important;
+  width: 84% !important;
   margin: auto !important;
 }
 .carousel .slide {
@@ -715,7 +721,10 @@ a:hover { color: #a69186; }
   padding-left: 5%;
   padding-right: 5%;
   border: 1px solid #ddd;
-  height: 20rem;
+  height: 25rem;
+}
+.embed-video {
+  max-width: 568px;
 }
 @media screen and (max-width: 1210px) {
   .myCarousel { height: 25rem; }
@@ -895,6 +904,28 @@ a:hover { color: #a69186; }
 .card {
   margin: 10px;
 }
+/* EVENTS */
+.accordion {
+  max-width: 900px;
+  margin: 2rem auto;
+}
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #00000010;
+}
+.accordion-title:hover {
+  background-color: #00000020;
+}
+.accordion-title,
+.accordion-content {
+  padding: 1rem;
+}
+.accordion-content {
+  background-color: #00000006;
+}
 
 /* CONTACT */
 .section-bg-flex-center {
@@ -1057,12 +1088,19 @@ a:hover { color: #a69186; }
 .top-border._40 {
   margin-top: 40px;
 }
+.lg-title {
+  font-size: 280%;
+  text-transform: uppercase;
+}
 
 .carousel button { color: #000; }
 
 @media screen and (max-width: 991px) {
   .w-container {
     max-width: 728px;
+  }
+  .embed-video {
+    max-width: 528px;
   }
 }
 @media screen and (max-width: 767px) {

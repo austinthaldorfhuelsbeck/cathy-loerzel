@@ -5,6 +5,7 @@ import NavBar from "./Components/NavBar"
 import Home from "./Home/Home"
 import BlogLayout from "./Blog/BlogLayout"
 import Coaching from "./Coaching/Coaching"
+import Events from "./Events/Events"
 import RedeemingHeartache from "./RedeemingHeartache/RedeemingHeartache.jsx"
 import Contact from "./Contact/Contact"
 import AdminConsole from "./AdminConsole/AdminConsole"
@@ -34,6 +35,9 @@ export default function Layout() {
         </Route>
         <Route path="/coaching">
           <Coaching />
+        </Route>
+        <Route path="/events">
+          <Events />
         </Route>
         <Route path="/redeeming-heartache">
           <RedeemingHeartache />

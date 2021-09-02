@@ -53,6 +53,7 @@ export default function ContactForm() {
   return (
     <div id="contact-form" className="content-section-alt wf-section">
       <div className="section-bg-flex-center">
+        <h3 className="lg-title mt-5">Contact</h3>
         <div className="_25-column"></div>
         <div className="form-block" data-aos="fade-up">
           <div>Reach out about your speaking engagement or event.</div>
