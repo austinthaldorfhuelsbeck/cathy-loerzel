@@ -7,8 +7,6 @@ const app = express()
 const blogsRouter = require("./blogs/blogs.router")
 const testimonialsRouter = require("./testimonials/testimonials.router")
 const eventsRouter = require("./events/events.router")
-// const newsletterRouter = require("./newsletter/newsletter.router.js")
-// const contactRouter = require("./contact/contact.router.js")
 // ERROR HANDLERS
 const notFound = require("./errors/notFound")
 const errorHandler = require("./errors/errorHandler")
@@ -20,8 +18,6 @@ app.use(express.json())
 app.use("/blogs", blogsRouter)
 app.use("/testimonials", testimonialsRouter)
 app.use("/events", eventsRouter)
-// app.use("/newsletter", newsletterRouter)
-// app.use("/contact", contactRouter)
 
 // Error handlers
 app.use(notFound)

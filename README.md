@@ -6,9 +6,11 @@ This project is a single-page application designed as a personal website, a blog
 
 ## Custom API Solution
 
-*(updated 08-19-2021)*
+*(updated 09-02-2021)*
 
-A custom API solution is under development for keeping track of various data throughout the site. The API needs to keep track of (at minimum) blog posts, testimonials for "Redeeming Heartache", email addresses from the subscribe form, and all the information submitted in the contact form.
+A custom API solution for keeping track of various data throughout the site. The API keeps track of blog posts, testimonials for "Redeeming Heartache", and upcoming events.
+
+The API powers the display of the site, as well as the functionality of the admin page.
 
 ### Blogs
 
@@ -85,47 +87,3 @@ The methods and routing for the events section of the API is as follows:
 - PUT /:event_id - update an event
 - POST / - create a new event
 - DELETE /:event_id - delete an event
-
-### Newsletter Submissions
-
-Responses to this form are sent to Mailchimp, but are backed up in the database.
-
-The newsletter submission object is structured as follows:
-
-- id: (required) A unique numerical identifier.
-- email: (required) The email address of the subscriber.
-- name: The full name of the subscriber.
-
-#### Newsletter - Methods and Routing
-
-The methods and routing for the newsletter section of the API is as follows:
-
-- GET / - list all newsletter subscriptions
-- GET /:newsletterId - read a newsletter subscription by ID
-- POST / - create a new newsletter subscription
-- DELETE /:newsletterId - delete a newsletter subscription
-
-### Contact Form Submissions
-
-Responses to this form are sent to EmailJS, but are backed up in the database.
-
-The contact form submission object is structured as follows:
-
-- id: (required) A unique numerical identifier.
-- name: (required) The full name of the individual inquiring.
-- company: The company involved in booking the event.
-- phone: The phone number of the individual inquiring.
-- email: (required) The email address of the individual inquiring.
-- message: (required) The body of the inquiry.
-- audience: A number representing the estimated audience size of the event.
-- location: The location of the event.
-
-#### Contact - Methods and Routing
-
-The methods and routing for the contact section of the API is as follows:
-
-- GET / - list all contacts
-- GET /:contactId - read a contact by ID
-- PUT /:contactId - update a contact's information
-- POST / - create a new contact form submission
-- DELETE /:contactId - delete a contact
