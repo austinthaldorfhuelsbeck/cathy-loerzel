@@ -3,7 +3,7 @@ exports.up = function (knex) {
     table.integer("testimonial_id").primary()
     table.string("name")
     table.string("title")
-    table.string("message")
+    table.string("message", 1000)
   })
 }
 
