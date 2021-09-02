@@ -1,7 +1,13 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import { useHistory } from "react-router-dom"
 
 export default function AccordionItem({ item }) {
   const [isActive, setIsActive] = useState(false)
+  // Active on Events page by default
+  const history = useHistory()
+  useEffect(() => {
+    if (history.location.pathname === "/events") setIsActive(true)
+  }, [history])
 
   const flipIsActive = () => setIsActive(!isActive)
 
