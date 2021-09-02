@@ -8,13 +8,13 @@ This project is a single-page application designed as a personal website, a blog
 
 *(updated 09-02-2021)*
 
-A custom API solution for keeping track of various data throughout the site. The API keeps track of blog posts, testimonials for "Redeeming Heartache", and upcoming events.
+A custom API solution for keeping track of various data throughout the site. The API keeps track of blog posts, their topics, and their categories. It also manages testimonials for "Redeeming Heartache", and upcoming events.
 
 The API powers the display of the site, as well as the functionality of the admin page.
 
 ### Blogs
 
-Blogs encompass writing, podcasts, and videos of Cathy's teaching. Each blog is organized by category, and the ability to sort by topic should be added.
+Blogs encompass writing, podcasts, and videos of Cathy's teaching. Each blog is organized by category and topic.
 
 Blogs click through to an individual blog page, which displays the data for a single post in greater detail for the user to experience. The blog page is designed to display any of these three types of blog, and adjust what is displayed accordingly.
 
@@ -45,6 +45,45 @@ The methods and routing for the blogs section of the API is as follows:
 - GET /featured - list all blogs which are featured
 - PUT /:blog_id - update a blog by ID
 - DELETE /:blog_id - delete a blog by ID
+
+### Topics
+
+Topics categorize blogs by subject matter. They relate to the Blogs table.
+
+The topic object is structured as follows:
+
+- topic_id (integer): PRIMARY Unique numerical identifier
+- topic (string): (required) Name of the topic which relates to Blogs table
+- color (string): (required) Hex value of the color to associate with this topic.
+
+#### Topics - Methods and Routing
+
+The methods and routing for the topics section of the API is as follows:
+
+- GET / - list all topics
+- GET /:topic_id - read a topic by ID
+- PUT /:topic_id - update a topic
+- POST / - create a new topic
+- DELETE /:topic_id - delete a topic
+
+### Categories
+
+Categories represent the type of blog post. They relate to the Blogs table.
+
+The category object is structured as follows:
+
+- category_id (integer): PRIMARY Unique numerical identifier
+- category (string): (required) Name of the category which relates to Blogs table
+
+#### Categories - Methods and Routing
+
+The methods and routing for the categories section of the API is as follows:
+
+- GET / - list all categories
+- GET /:category_id - read a category by ID
+- PUT /:category_id - update a category
+- POST / - create a new category
+- DELETE /:category_id - delete a category
 
 ### Testimonials
 
