@@ -6,6 +6,7 @@ const app = express()
 // ROUTES
 const blogsRouter = require("./blogs/blogs.router")
 const testimonialsRouter = require("./testimonials/testimonials.router")
+const eventsRouter = require("./events/events.router")
 // const newsletterRouter = require("./newsletter/newsletter.router.js")
 // const contactRouter = require("./contact/contact.router.js")
 // ERROR HANDLERS
@@ -18,6 +19,7 @@ app.use(express.json())
 // Route handlers
 app.use("/blogs", blogsRouter)
 app.use("/testimonials", testimonialsRouter)
+app.use("/events", eventsRouter)
 // app.use("/newsletter", newsletterRouter)
 // app.use("/contact", contactRouter)
 

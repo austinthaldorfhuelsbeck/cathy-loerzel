@@ -1,7 +1,7 @@
 const knex = require("../db/connection")
 
 /**
- * CRUDL services for blog resources
+ * CRUDL services for testimonials resources
  * Create returns a list, of which we only need the first element
  */
 function list() {
