@@ -73,8 +73,8 @@ The event object is structured as follows:
 
 - event_id (integer): (required) A unique numerical identifier.
 - name (string): (required) Name of the upcoming event.
-- date (date): (required) Date of the upcoming event.
-- content (string): (required) The HTML of the full content of the post.
+- date (string): (required) Date(s) of the upcoming event.
+- content (string, 10000): (required) The HTML of the full content of the post.
 
 #### Events - Methods and Routing
 

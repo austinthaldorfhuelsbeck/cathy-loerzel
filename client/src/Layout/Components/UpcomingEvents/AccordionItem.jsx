@@ -14,13 +14,13 @@ export default function AccordionItem({ item }) {
   return (
     <div className="accordion-item">
       <div className="accordion-title" onClick={flipIsActive}>
-        <div>{item.title}</div>
+        <div>{item.name}</div>
         <div>{isActive ? "-" : "+"}</div>
       </div>
       {isActive && (
         <>
           <h2 className="mx-4">{item.date}</h2>
-          <div className="accordion-content" dangerouslySetInnerHTML={{ __html: item.text }}></div>
+          <div className="accordion-content" dangerouslySetInnerHTML={{ __html: item.content }}></div>
         </>
       )}
     </div>

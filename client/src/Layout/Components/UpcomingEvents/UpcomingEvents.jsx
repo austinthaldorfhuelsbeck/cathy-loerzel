@@ -1,21 +1,21 @@
+import { useState, useEffect } from "react"
 import AccordionItem from "./AccordionItem"
 
 export default function UpcomingEvents() {
-  let events = [
-    {
-      title: "",
-      date: "",
-      text: ``
-    },
-    {
-      title: "",
-      date: "",
-      text: ``
-    }
-  ]
+  const [events, setEvents] = useState([])
+  const [err, setErr] = useState("")
+
+  useEffect(() => {
+    let url = `${process.env.REACT_APP_API_BASE_URL}/events`
+    fetch(url)
+      .then(res => res.json())
+      .then((res) => setEvents(res.data))
+      .catch(setErr)
+  }, [])
 
   return (
     <div className="w-container">
+      {err}
       <h3 className="lg-title">Upcoming Events</h3>
       <div className="accordion">
         {events.map((event) => (
