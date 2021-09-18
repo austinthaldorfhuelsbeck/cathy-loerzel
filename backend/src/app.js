@@ -11,7 +11,11 @@ const eventsRouter = require("./events/events.router")
 const notFound = require("./errors/notFound")
 const errorHandler = require("./errors/errorHandler")
 
-app.use(cors())
+app.use(
+  cors({
+    origin: "*",
+  })
+)
 app.use(express.json())
 
 // Route handlers

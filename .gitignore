@@ -22,3 +22,5 @@ yarn-error.log*
 
 /cathy-loerzel-frontent/.vercel
 node_modules
+
+.vercel
