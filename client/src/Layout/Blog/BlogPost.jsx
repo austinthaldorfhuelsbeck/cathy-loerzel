@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
+import ReactPlayer from "react-player"
 
 export default function BlogPost({ id }) {
   const [blog, setBlog] = useState({})
@@ -85,13 +86,16 @@ export default function BlogPost({ id }) {
         <h5>Published on {blog.date && blog.date.slice(0, 10)}</h5>
       </div>
       <div className="row">
-        <a href={blog.url} target="_blank" rel="noreferrer">
-          <img
-            src={blog.img}
-            alt={blog.title}
-            className="image-blog"
-          />
-        </a>
+        {blog.video
+          ? <ReactPlayer url={blog.video} controls />
+          : <a href={blog.url} target="_blank" rel="noreferrer">
+            <img
+              src={blog.img}
+              alt={blog.title}
+              className="image-blog"
+            />
+          </a>
+        }
         {blog.audio && <PodcastAside />}
       </div>
       <div dangerouslySetInnerHTML={{ __html: blog.content }} />

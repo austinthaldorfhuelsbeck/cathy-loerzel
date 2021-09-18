@@ -16,13 +16,13 @@ export default function DashboardNav() {
             </Link>
           </li>
           <li>
-            <Link to="/topics" className="nav-link text-white">
-              All Topics
+            <Link to="/admin/testimonials/new" className="nav-link text-white">
+              New Testimonial
             </Link>
           </li>
           <li>
-            <Link to="/categories" className="nav-link text-white">
-              All Categories
+            <Link to="/admin/events/new" className="nav-link text-white">
+              New Event
             </Link>
           </li>
         </ul>

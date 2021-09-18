@@ -1,9 +1,9 @@
 const router = require("express").Router()
-const controller = require("./contact.controller")
+const controller = require("./events.controller")
 const methodNotAllowed = require("../errors/methodNotAllowed")
 
 /**
- * Defines the router for contact form response resources
+ * Defines the router for events resources
  *
  * @type {Router}
  */
@@ -13,7 +13,7 @@ router
   .post(controller.create)
   .all(methodNotAllowed)
 router
-  .route("/:contactId")
+  .route("/:event_id")
   .get(controller.read)
   .put(controller.update)
   .delete(controller.delete)
