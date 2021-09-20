@@ -44,10 +44,11 @@ export default function Coaching() {
         <div className="row my-5">
           <div className="col col-md-8">
             <h2>Speaking/Teaching</h2>
-            <p>Cathy is available to speak to your community, church, or organization. She teaches on trauma, story and healing, spiritual warfare, and her hallmark model called the “U-Diagram” on the trajectory of healing the human heart.</p>
+            <p>Cathy is available to speak to your community, church, or organization. She teaches on the <em>Orphan, Widow, Stranger</em> content found in <strong>Redeeming Heartache</strong> in depth.</p>
+            <p>She teaches on trauma, story and healing, spiritual warfare, and her hallmark model called the “U-Diagram” on the trajectory of healing the human heart.</p>
           </div>
           <div className="col col-md-4">
-            <img src={img4} alt="Cathy Headshot" width="100%" />
+            <img src={img4} alt="Cathy Headshot" width="300px" />
           </div>
         </div>
       </div>

@@ -461,19 +461,19 @@ h3 {
   border-bottom-width: 1px;
   background-color: transparent;
   font-family: Roboto, sans-serif;
-  color: #000;
+  color: #fff;
 }
 .text-field-4::-webkit-input-placeholder {
-  color: #000;
+  color: #fff;
 }
 .text-field-4:-ms-input-placeholder {
-  color: #000;
+  color: #fff;
 }
 .text-field-4::-ms-input-placeholder {
-  color: #000;
+  color: #fff;
 }
 .text-field-4::placeholder {
-  color: #000;
+  color: #fff;
 }
 .textarea-2 {
   margin-bottom: 25px;
@@ -483,23 +483,23 @@ h3 {
   border: 1px solid #fff;
   background-color: transparent;
   font-family: Roboto, sans-serif;
-  color: #000;
+  color: #fff;
 }
 .textarea-2::-webkit-input-placeholder {
   font-family: Roboto, sans-serif;
-  color: #000;
+  color: #fff;
 }
 .textarea-2:-ms-input-placeholder {
   font-family: Roboto, sans-serif;
-  color: #000;
+  color: #fff;
 }
 .textarea-2::-ms-input-placeholder {
   font-family: Roboto, sans-serif;
-  color: #000;
+  color: #fff;
 }
 .textarea-2::placeholder {
   font-family: Roboto, sans-serif;
-  color: #000;
+  color: #fff;
 }
 .form-block-2 button {
   width: 20%;
@@ -1094,6 +1094,132 @@ h3 {
 }
 
 .carousel button { color: #000; }
+
+.article-content, .section {
+  padding: 64px 0;
+}
+
+.grid {
+  list-style: none;
+}
+
+.grid-half {
+  display: inline-block;
+  width: 50%;
+}
+
+.pricing, .schedule {
+  text-align: center;
+}
+
+.schedule {
+  font: 125%;
+  font-family: "leitura-news", TimesNewRoman, "Times New Roman", Times, serif;
+}
+
+.pricing-table {
+  background-color: #fff;
+  box-shadow: 0 1px 4px 0 rgb(229 229 233 / 0%);
+  border: 1px solid #e5e5e9;
+  border-radius: 2px;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.pricing-info {
+  padding: 20px;
+}
+
+.pricing-amount {
+  font-size: 1.266em;
+}
+
+.pricing-small {
+  font-size: 0.79em;
+  margin-bottom: 16px;
+}
+
+.schedule-day {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e9;
+  font-weight: 700;
+  margin-bottom: 0;
+  padding: 5px 10px;
+}
+
+.schedule-day-session {
+  border: 1px solid #e5e5e9;
+  border-bottom: none;
+  margin-bottom: 32px;
+}
+
+.schedule-session {
+  overflow: hidden;
+  font-family: 'lato', sans-serif;
+  font-size: .64em;
+  border-bottom: 1px solid #e5e5e9;
+}
+
+.schedule-time {
+  text-align: right;
+  float: left;
+  width: 50%;
+  padding: 5px 10px;
+}
+
+.schedule-desc {
+  border-left: 1px solid #e5e5e9;
+  text-align: left;
+  float: left;
+  width: 50%;
+  padding: 5px 10px;
+}
+
+.event-members {
+  overflow: hidden;
+  margin-top: 32px;
+}
+
+.event-member-list {
+  list-style: none;
+}
+
+.member-chip-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.event-info {
+  padding: 50px;
+}
+
+.event-img {
+  max-width: 400px;
+}
+
+.btn-full {
+  display: block;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  margin: 15px;
+  padding: 10px 30px 12px;
+  border-radius: 2px;
+  background: #d8775f;
+  color: #fff !important;
+  font-family: 'lato', sans-serif;
+  font-size: 0.790em;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: .025em;
+  border: 1px solid #d8775f;
+  text-decoration: none;
+  text-shadow: none !important;
+  background-image: none !important;
+}
 
 @media screen and (max-width: 991px) {
   .w-container {

@@ -17,7 +17,7 @@ export default function UpcomingEvents() {
     <div className="w-container">
       {err}
       <h3 className="lg-title">Upcoming Events</h3>
-      <div className="accordion">
+      <div className="my-5">
         {events.map((event) => (
           <AccordionItem key={event.title} item={event} />
         ))}

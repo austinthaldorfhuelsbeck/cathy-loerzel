@@ -26,10 +26,11 @@ export default function Blog({ category, topic }) {
           <em>&larr; Back to all blogs</em>
         </Link>
       ) : ""}
-      <FeaturedContent />
+      {(category === "teaching") ? "" : <FeaturedContent />}
       <div className="flex">
         {blogs.map((blog) => <Card blog={blog} />)}
       </div>
+      {(category === "teaching") ? <FeaturedContent /> : ""}
     </div>
   )
 }

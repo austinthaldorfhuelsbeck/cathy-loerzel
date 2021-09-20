@@ -12,9 +12,9 @@ export default function AccordionItem({ item }) {
   const flipIsActive = () => setIsActive(!isActive)
 
   return (
-    <div className="accordion-item">
+    <div className="">
       <div className="accordion-title" onClick={flipIsActive}>
-        <div>{item.name}</div>
+        <h2>{item.name}</h2>
         <div>{isActive ? "-" : "+"}</div>
       </div>
       {isActive && (
