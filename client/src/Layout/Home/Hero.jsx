@@ -14,7 +14,7 @@ export default function Hero() {
                 className="text-link-2"
                 rel="noreferrer"
               >
-                Pre-Order &quot;redeeming heartache&quot; now
+                Order &quot;redeeming heartache&quot; now
               </a>
             </div>
           </div>
