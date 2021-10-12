@@ -1,29 +1,46 @@
 body {
-  font-family: 'Cormorant Garamond', sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   color: #5f4d5d;
   font-size: 24px;
   line-height: 30px;
 }
-a { text-decoration: none; }
-a { color: #934a26; }
-a:active { color: #934a26; }
-a:hover { color: #a69186; }
+.contain {
+  min-width: 375px;
+}
+a {
+  text-decoration: none;
+}
+a {
+  color: #934a26;
+}
+a:active {
+  color: #934a26;
+}
+a:hover {
+  color: #a69186;
+}
+ul,
+li {
+  text-decoration: none;
+}
 
 /* FONTS */
 .h1-white {
-  font-family: 'Cormorant Garamond', sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   color: #fff;
   font-size: 45px;
   line-height: 5vw;
 }
 .h1-white.white {
   margin-bottom: 50px;
-  font-family: 'Cormorant Garamond', sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   color: #fff;
   font-size: 5vw;
 }
 @media screen and (min-width: 1400px) {
-  .h1-white { line-height: 1.5; }
+  .h1-white {
+    line-height: 1.5;
+  }
   .h1-white.white {
     font-size: 75px;
     line-height: 1;
@@ -46,7 +63,8 @@ a:hover { color: #a69186; }
 .h1-redeeming-alt {
   font-size: 3rem;
   font-weight: 300;
-  font-family: 'Montserrat', 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  font-family: "Montserrat", "Gill Sans", "Gill Sans MT", "Calibri",
+    "Trebuchet MS", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.25rem;
   line-height: 1;
@@ -55,10 +73,10 @@ a:hover { color: #a69186; }
   margin-top: none;
 }
 h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .text-link {
-  font-family: 'Cormorant Garamond', sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   color: #fff;
   font-size: 19px;
   font-style: italic;
@@ -70,7 +88,7 @@ h3 {
   border-bottom: 2px solid #fff;
   -webkit-transition: opacity 200ms ease;
   transition: opacity 200ms ease;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #fff;
   font-size: 13.5px;
   font-weight: 600;
@@ -84,7 +102,7 @@ h3 {
 }
 .text-link-3 {
   border-bottom: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #000;
   font-size: 13.5px;
   font-weight: 400;
@@ -99,7 +117,7 @@ h3 {
   font-size: 100%;
   font-weight: 100;
   text-transform: uppercase;
-  letter-spacing: .35rem;
+  letter-spacing: 0.35rem;
 }
 
 /* IMAGES */
@@ -138,7 +156,9 @@ h3 {
   object-fit: cover;
   filter: brightness(60%);
 }
-.text-img-container:hover { filter: brightness(80%); }
+.text-img-container:hover {
+  filter: brightness(80%);
+}
 .featured-text p {
   font-size: 2rem;
   text-transform: capitalize;
@@ -169,7 +189,7 @@ h3 {
   width: auto;
   -webkit-transition: background-color 200ms ease;
   transition: background-color 200ms ease;
-  font-family: 'Cormorant Garamond', sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   color: rgba(0, 0, 0, 0.78);
   font-weight: 500;
   text-transform: capitalize;
@@ -186,7 +206,7 @@ h3 {
 .nav-link-alt {
   padding-top: 46px;
   border-bottom: 1px none #000;
-  font-family: 'Cormorant Garamond', sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   color: rgba(0, 0, 0, 0.78);
   font-weight: 500;
 }
@@ -198,7 +218,9 @@ h3 {
   color: #bc796c;
 }
 @media screen and (max-width: 1400px) {
-  .nav-link { width: 8rem; }
+  .nav-link {
+    width: 8rem;
+  }
 }
 @media screen and (max-width: 991px) {
   .nav-link .nav-link-alt {
@@ -282,7 +304,7 @@ h3 {
   color: #fff;
 }
 .intro-paragraph {
-  font-family: 'Cormorant Garamond', sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   color: #5f4d5d;
   font-size: 26px;
   line-height: 38px;
@@ -366,7 +388,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
 }
-.row>* {
+.row > * {
   flex: 50%;
 }
 
@@ -402,9 +424,15 @@ h3 {
   width: 45%;
   margin-right: 5%;
 }
-.grow { transition: all .2s ease-in-out; }
-.grow:hover { transform: scale(1.05); }
-.card { box-shadow: 0 2px 10px 0 rgba(0,0,0,.1); }
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.05);
+}
+.card {
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+}
 
 /* FORMS */
 .form-block {
@@ -550,6 +578,7 @@ h3 {
 .hero-section {
   position: relative;
   height: 100%;
+  width: 100%;
   padding-top: 72px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -577,7 +606,9 @@ h3 {
   bottom: 0px;
   height: 44%;
 }
-.bg-bottom { background-color: rgba(175, 188, 178, 0.6); }
+.bg-bottom {
+  background-color: rgba(175, 188, 178, 0.6);
+}
 .hero-text-box {
   position: absolute;
   top: 0px;
@@ -660,7 +691,7 @@ h3 {
   right: -65px;
   width: 70%;
   height: 675px;
-  background-image: url('https://storage.googleapis.com/cathy-loerzel-img/Cathy-2020-90.jpg');
+  background-image: url("https://storage.googleapis.com/cathy-loerzel-img/Cathy-2020-90.jpg");
   background-position: 0px 27%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -670,7 +701,7 @@ h3 {
   right: -250px;
   width: 70%;
   height: 675px;
-  background-image: url('https://storage.googleapis.com/cathy-loerzel-img/Abstract-2.jpg');
+  background-image: url("https://storage.googleapis.com/cathy-loerzel-img/Abstract-2.jpg");
   background-position: 0px 27%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -727,10 +758,14 @@ h3 {
   max-width: 568px;
 }
 @media screen and (max-width: 1210px) {
-  .myCarousel { height: 25rem; }
+  .myCarousel {
+    height: 25rem;
+  }
 }
 @media screen and (max-width: 650px) {
-  .myCarousel { height: 35rem; }
+  .myCarousel {
+    height: 35rem;
+  }
 }
 .carousel .control-dots {
   padding-left: 5px !important;
@@ -760,7 +795,7 @@ h3 {
   line-height: 29px !important;
   color: #222;
   font-size: 15px;
-  font-family: 'Roboto', 'Scala Sans', sans-serif;
+  font-family: "Roboto", "Scala Sans", sans-serif;
   max-height: 67px;
 }
 .myCarousel p:before {
@@ -794,20 +829,34 @@ h3 {
 .cards-section {
   padding: 0px 20px 20px 20px;
 }
-.topic-banner { height: 2rem; }
+.topic-banner {
+  height: 2rem;
+}
 
 .circle-color {
   height: 8rem;
   width: 8rem;
   border-radius: 50%;
 }
-.redeeming-heartache { background-color: #e4cdc2; }
-.leadership { background-color: #934a26; }
-.sexual-abuse { background-color: #a79186; }
-.allender-methodology { background-color: #a8baba; }
-.spiritual-warfare { background-color: #ac612c; }
+.redeeming-heartache {
+  background-color: #e4cdc2;
+}
+.leadership {
+  background-color: #934a26;
+}
+.sexual-abuse {
+  background-color: #a79186;
+}
+.allender-methodology {
+  background-color: #a8baba;
+}
+.spiritual-warfare {
+  background-color: #ac612c;
+}
 
-.category-thumbnails { padding: 2rem 0; }
+.category-thumbnails {
+  padding: 2rem 0;
+}
 
 .category-thumbnails li {
   padding: 1rem;
@@ -832,14 +881,16 @@ h3 {
   color: #fff;
 }
 
-.card-body { padding-top: 0px; }
+.card-body {
+  padding-top: 0px;
+}
 .intro-box {
   width: 30.3%;
   margin-right: 3%;
   padding-top: 0px;
   padding-bottom: 0px;
   background-color: #ceb3cb;
-  background-image: url('https://storage.cloud.google.com/cathy-loerzel-img/Abstract-2.jpg');
+  background-image: url("https://storage.cloud.google.com/cathy-loerzel-img/Abstract-2.jpg");
   background-position: 0px 0px;
   background-size: auto;
 }
@@ -852,7 +903,7 @@ h3 {
   padding-top: 0px;
   padding-bottom: 0px;
   background-color: transparent;
-  background-image: url('https://storage.cloud.google.com/cathy-loerzel-img/Abstract-3.jpg');
+  background-image: url("https://storage.cloud.google.com/cathy-loerzel-img/Abstract-3.jpg");
   background-position: 0px 0px;
   background-size: cover;
 }
@@ -865,14 +916,14 @@ h3 {
   padding-top: 0px;
   padding-bottom: 0px;
   background-color: #ceb3cb;
-  background-image: url('https://storage.cloud.google.com/cathy-loerzel-img/Abstract-2.jpg');
+  background-image: url("https://storage.cloud.google.com/cathy-loerzel-img/Abstract-2.jpg");
   background-position: 0px 0px;
   background-size: auto;
 }
 .intro-box-alt2.no-border {
   margin-right: 0%;
   background-color: transparent;
-  background-image: url('https://storage.cloud.google.com/cathy-loerzel-img/Abstract-4.jpg');
+  background-image: url("https://storage.cloud.google.com/cathy-loerzel-img/Abstract-4.jpg");
   background-position: 0px 0px;
   background-size: cover;
 }
@@ -883,7 +934,7 @@ h3 {
 .title-link {
   -webkit-transition: opacity 200ms ease;
   transition: opacity 200ms ease;
-  font-family: 'Cormorant Garamond', sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   color: #fff;
   font-size: 25px;
   line-height: 30px;
@@ -894,7 +945,7 @@ h3 {
   opacity: 0.8;
 }
 .text-link {
-  font-family: 'Cormorant Garamond', sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   color: #fff;
   font-size: 19px;
   font-style: italic;
@@ -941,7 +992,7 @@ h3 {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   background-color: rgba(0, 0, 0, 0.53);
-  background-image: url('https://storage.cloud.google.com/cathy-loerzel-img/Abstract-1.jpg');
+  background-image: url("https://storage.cloud.google.com/cathy-loerzel-img/Abstract-1.jpg");
   background-position: 0px 0px;
   background-size: cover;
   opacity: 1;
@@ -992,7 +1043,7 @@ h3 {
   margin-right: 10px;
   border-radius: 50%;
   background-color: #d6bbd3;
-  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
+  background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg");
   background-position: 50% 50%;
   background-size: 125px;
   background-repeat: no-repeat;
@@ -1001,18 +1052,18 @@ h3 {
 }
 .social-icon:hover {
   background-color: #ba9fb7;
-  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
+  background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg");
   background-size: 125px;
   background-repeat: no-repeat;
 }
 .social-icon.instagram {
   background-color: #a69186;
-  background-image: url('https://storage.cloud.google.com/cathy-loerzel-img/instagram-2.svg');
+  background-image: url("https://storage.cloud.google.com/cathy-loerzel-img/instagram-2.svg");
   background-size: 15px;
 }
 .social-icon.twitter {
   background-color: #a69186;
-  background-image: url('https://storage.cloud.google.com/cathy-loerzel-img/gorjeo-1.svg');
+  background-image: url("https://storage.cloud.google.com/cathy-loerzel-img/gorjeo-1.svg");
   background-size: 15px;
 }
 .footer-notice {
@@ -1046,7 +1097,7 @@ h3 {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   background-color: #a69186;
-  background-image: url('https://storage.cloud.google.com/cathy-loerzel-img/flecha-hacia-arriba.svg');
+  background-image: url("https://storage.cloud.google.com/cathy-loerzel-img/flecha-hacia-arriba.svg");
   background-position: 50% 50%;
   background-size: 13px;
   background-repeat: no-repeat;
@@ -1062,7 +1113,7 @@ h3 {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   background-color: #a69186;
-  background-image: url('https://storage.cloud.google.com/cathy-loerzel-img/flecha-hacia-arriba.svg');
+  background-image: url("https://storage.cloud.google.com/cathy-loerzel-img/flecha-hacia-arriba.svg");
   background-position: 50% 50%;
   background-size: 13px;
   background-repeat: no-repeat;
@@ -1093,9 +1144,12 @@ h3 {
   text-transform: uppercase;
 }
 
-.carousel button { color: #000; }
+.carousel button {
+  color: #000;
+}
 
-.article-content, .section {
+.article-content,
+.section {
   padding: 64px 0;
 }
 
@@ -1108,7 +1162,8 @@ h3 {
   width: 50%;
 }
 
-.pricing, .schedule {
+.pricing,
+.schedule {
   text-align: center;
 }
 
@@ -1155,8 +1210,8 @@ h3 {
 
 .schedule-session {
   overflow: hidden;
-  font-family: 'lato', sans-serif;
-  font-size: .64em;
+  font-family: "lato", sans-serif;
+  font-size: 0.64em;
   border-bottom: 1px solid #e5e5e9;
 }
 
@@ -1210,11 +1265,11 @@ h3 {
   border-radius: 2px;
   background: #d8775f;
   color: #fff !important;
-  font-family: 'lato', sans-serif;
-  font-size: 0.790em;
+  font-family: "lato", sans-serif;
+  font-size: 0.79em;
   font-weight: 700;
   text-decoration: none;
-  letter-spacing: .025em;
+  letter-spacing: 0.025em;
   border: 1px solid #d8775f;
   text-decoration: none;
   text-shadow: none !important;
@@ -1228,12 +1283,51 @@ h3 {
   .embed-video {
     max-width: 528px;
   }
+  ._49-column-2 {
+    width: 100%;
+  }
+  .form-block-2 button {
+    width: 100px;
+  }
 }
 @media screen and (max-width: 767px) {
   .w-row,
   .w-container .w-row {
     margin-left: 0;
     margin-right: 0;
+  }
+  .circle-color {
+    height: 5rem;
+    width: 5rem;
+  }
+  .over-img {
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
+  .category-thumbnails {
+    padding: 0;
+  }
+  .category-thumbnails li {
+    padding: 0.1rem;
+  }
+  .lg-title {
+    line-height: 5rem;
+  }
+  .footer-links {
+    display: none;
+  }
+  .hero-image {
+    right: 0px;
+    width: 100%;
+  }
+  .hero-text-box {
+    top: 310px;
+    width: 70%;
+    height: 250px;
+  }
+  .h1-white {
+    font-size: 30px;
+    line-height: 28px;
   }
 }
 @media screen and (max-width: 479px) {
