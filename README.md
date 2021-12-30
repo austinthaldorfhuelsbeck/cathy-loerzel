@@ -1,8 +1,11 @@
 # Cathy Loerzel
 
 This project is a single-page application designed as a personal website, a blog, and a landing page to promote Cathy Loerzel and her book, Redeeming Heartache.
+
 Its origin is as a simple frontend with basic API functionality (two contact forms).
+
 It has since been expanded to offer a more robust API solution. The app now stores all requisite data for blogs, topics, categories, testimonials, and events within a database, and provides methods for interacting with and modifying this data.
+
 An admin dashboard is currently under development, which will allow admin users to perform API-enabled actions upon the data from within a user-friendly dashboard.
 
 ### The current deployment is available [here](https://cathyloerzel.com/).
