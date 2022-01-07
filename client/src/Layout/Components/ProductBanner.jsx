@@ -8,7 +8,7 @@ export default function ProductBanner() {
         className="w-inline-block"
       >
         <img
-          src="https://storage.cloud.google.com/cathy-loerzel/Images/Redeeming-Heartache-TWITTER-Available-Now.jpg"
+          src="https://storage.cloud.google.com/cathy-loerzel-img/Images_Redeeming-Heartache-TWITTER-Available-Now.jpg"
           alt="Redeeming Heartache Available Now"
           className="image"
         />
