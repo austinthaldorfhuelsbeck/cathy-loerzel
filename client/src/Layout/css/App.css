@@ -563,6 +563,9 @@ h3 {
   background-color: #fff;
   color: #b99bb6;
 }
+.form-block-2 form input {
+  padding-bottom: 10px;
+}
 .success-message {
   background-color: transparent;
   color: #fff;
