@@ -980,6 +980,9 @@ h3 {
 .accordion-content {
   background-color: #00000006;
 }
+.event-img {
+  padding-left: 15px;
+}
 
 /* CONTACT */
 .section-bg-flex-center {
