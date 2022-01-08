@@ -704,7 +704,7 @@ h3 {
   right: -250px;
   width: 70%;
   height: 675px;
-  background-image: url("https://storage.googleapis.com/cathy-loerzel-img/Abstract-2.jpg");
+  background-image: url("https://cathy-loerzel-img.s3.us-west-2.amazonaws.com/Abstract-2.jpg");
   background-position: 0px 27%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -893,7 +893,7 @@ h3 {
   padding-top: 0px;
   padding-bottom: 0px;
   background-color: #ceb3cb;
-  background-image: url("https://storage.cloud.google.com/cathy-loerzel-img/Abstract-2.jpg");
+  background-image: url("https://cathy-loerzel-img.s3.us-west-2.amazonaws.com/Abstract-1.jpg");
   background-position: 0px 0px;
   background-size: auto;
 }
@@ -906,7 +906,7 @@ h3 {
   padding-top: 0px;
   padding-bottom: 0px;
   background-color: transparent;
-  background-image: url("https://storage.cloud.google.com/cathy-loerzel-img/Abstract-3.jpg");
+  background-image: url("https://cathy-loerzel-img.s3.us-west-2.amazonaws.com/Abstract-3.jpg");
   background-position: 0px 0px;
   background-size: cover;
 }
@@ -919,14 +919,14 @@ h3 {
   padding-top: 0px;
   padding-bottom: 0px;
   background-color: #ceb3cb;
-  background-image: url("https://storage.cloud.google.com/cathy-loerzel-img/Abstract-2.jpg");
+  background-image: url("https://cathy-loerzel-img.s3.us-west-2.amazonaws.com/Abstract-2.jpg");
   background-position: 0px 0px;
   background-size: auto;
 }
 .intro-box-alt2.no-border {
   margin-right: 0%;
   background-color: transparent;
-  background-image: url("https://storage.cloud.google.com/cathy-loerzel-img/Abstract-4.jpg");
+  background-image: url("https://cathy-loerzel-img.s3.us-west-2.amazonaws.com/Abstract-4.jpg");
   background-position: 0px 0px;
   background-size: cover;
 }
@@ -995,7 +995,7 @@ h3 {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   background-color: rgba(0, 0, 0, 0.53);
-  background-image: url("https://storage.cloud.google.com/cathy-loerzel-img/Abstract-1.jpg");
+  background-image: url("https://cathy-loerzel-img.s3.us-west-2.amazonaws.com/Abstract-1.jpg");
   background-position: 0px 0px;
   background-size: cover;
   opacity: 1;
@@ -1061,12 +1061,12 @@ h3 {
 }
 .social-icon.instagram {
   background-color: #a69186;
-  background-image: url("https://storage.cloud.google.com/cathy-loerzel-img/instagram-2.svg");
+  background-image: url("https://cathy-loerzel-img.s3.us-west-2.amazonaws.com/instagram-2.svg");
   background-size: 15px;
 }
 .social-icon.twitter {
   background-color: #a69186;
-  background-image: url("https://storage.cloud.google.com/cathy-loerzel-img/gorjeo-1.svg");
+  background-image: url("https://cathy-loerzel-img.s3.us-west-2.amazonaws.com/gorjeo-1.svg");
   background-size: 15px;
 }
 .footer-notice {
@@ -1100,7 +1100,7 @@ h3 {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   background-color: #a69186;
-  background-image: url("https://storage.cloud.google.com/cathy-loerzel-img/flecha-hacia-arriba.svg");
+  background-image: url("https://cathy-loerzel-img.s3.us-west-2.amazonaws.com/flecha-hacia-arriba.svg");
   background-position: 50% 50%;
   background-size: 13px;
   background-repeat: no-repeat;
@@ -1116,7 +1116,7 @@ h3 {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   background-color: #a69186;
-  background-image: url("https://storage.cloud.google.com/cathy-loerzel-img/flecha-hacia-arriba.svg");
+  background-image: url("https://cathy-loerzel-img.s3.us-west-2.amazonaws.com/flecha-hacia-arriba.svg");
   background-position: 50% 50%;
   background-size: 13px;
   background-repeat: no-repeat;
