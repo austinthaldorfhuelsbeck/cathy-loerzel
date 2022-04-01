@@ -14,7 +14,7 @@ export default function UpcomingEvents() {
   }, [])
 
   return (
-    <div className="w-container">
+    <div className="w-container upcoming-section">
       {err}
       <h3 className="lg-title">Upcoming Events</h3>
       <div className="my-5">

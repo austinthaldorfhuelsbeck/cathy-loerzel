@@ -232,7 +232,7 @@ h3 {
 /* CONTAINERS */
 .content-section {
   overflow: hidden;
-  padding-top: 75px;
+  padding-top: 15px;
   padding-bottom: 75px;
 }
 .content-section-alt {
@@ -959,6 +959,11 @@ h3 {
   margin: 10px;
 }
 /* EVENTS */
+.upcoming-section {
+  overflow: hidden;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
 .accordion {
   max-width: 900px;
   margin: 2rem auto;
@@ -1098,7 +1103,6 @@ h3 {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   background-color: #a69186;
-  background-image: url("https://cathy-loerzel-img.s3.us-west-2.amazonaws.com/flecha-hacia-arriba.svg");
   background-position: 50% 50%;
   background-size: 13px;
   background-repeat: no-repeat;
@@ -1116,7 +1120,6 @@ h3 {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   background-color: #a69186;
-  background-image: url("https://cathy-loerzel-img.s3.us-west-2.amazonaws.com/flecha-hacia-arriba.svg");
   background-position: 50% 50%;
   background-size: 13px;
   background-repeat: no-repeat;
