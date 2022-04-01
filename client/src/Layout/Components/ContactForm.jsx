@@ -76,7 +76,7 @@ export default function ContactForm() {
               <input
                 type="text"
                 className="text-field-4 w-input"
-                maxlength="30"
+                maxLength="30"
                 name="name"
                 placeholder="your name *"
                 onChange={handleChange}
@@ -86,7 +86,7 @@ export default function ContactForm() {
               <input
                 type="text"
                 className="text-field-4 w-input"
-                maxlength="256"
+                maxLength="256"
                 name="company"
                 placeholder="your company"
                 onChange={handleChange}
@@ -95,7 +95,7 @@ export default function ContactForm() {
               <input
                 type="text"
                 className="text-field-4 w-input"
-                maxlength="30"
+                maxLength="30"
                 name="phone"
                 placeholder="your phone #"
                 onChange={handleChange}
@@ -104,7 +104,7 @@ export default function ContactForm() {
               <input
                 type="text"
                 className="text-field-4 w-input"
-                maxlength="256"
+                maxLength="256"
                 name="email"
                 placeholder="your email *"
                 onChange={handleChange}
@@ -113,7 +113,7 @@ export default function ContactForm() {
               />
               <textarea
                 className="textarea-2 w-input"
-                maxlength="5000"
+                maxLength="5000"
                 name="message"
                 placeholder="description of the event *"
                 onChange={handleChange}
@@ -123,7 +123,7 @@ export default function ContactForm() {
               <input
                 type="number"
                 className="text-field-4 w-input"
-                maxlength="5"
+                maxLength="5"
                 name="audience"
                 placeholder="audience size"
                 onChange={handleChange}
@@ -132,7 +132,7 @@ export default function ContactForm() {
               <input
                 type="text"
                 className="text-field-4 w-input"
-                maxlength="256"
+                maxLength="256"
                 name="location"
                 placeholder="location"
                 onChange={handleChange}
