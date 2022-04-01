@@ -45,9 +45,6 @@ export default function Layout() {
         <Route path="/contact">
           <Contact />
         </Route>
-        <Route path="/admin">
-          <AdminConsole />
-        </Route>
         <Route>
           <NotFound />
         </Route>
