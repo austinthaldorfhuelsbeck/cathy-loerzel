@@ -8,7 +8,6 @@ import Coaching from "./Coaching/Coaching"
 import Events from "./Events/Events"
 import RedeemingHeartache from "./RedeemingHeartache/RedeemingHeartache.jsx"
 import Contact from "./Contact/Contact"
-import AdminConsole from "./AdminConsole/AdminConsole"
 
 import NotFound from "./NotFound/NotFound"
 import Footer from "./Footer/Footer"
