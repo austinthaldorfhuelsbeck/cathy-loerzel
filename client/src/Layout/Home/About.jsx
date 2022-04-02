@@ -5,7 +5,7 @@ export default function About() {
       className="about-section w-clearfix wf-section"
     >
       <img
-        src="https://cathy-loerzel-img.s3.us-west-2.amazonaws.com/Cathy-2020-57.jpg"
+        src="https://cathy-loerzel-img.s3.us-west-2.amazonaws.com/cathy+farm.jpg"
         alt="Cathy Loerzel home farm"
         className="image-4 shadow"
       />
