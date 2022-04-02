@@ -11,8 +11,8 @@ export default function Contact() {
             <h1 className="h1-white white">Interested in bringing Cathy to your community?</h1>
           </div>
         </div>
-        <div class="hero-flex">
-          <div class="hero-image-2 _2"></div>
+        <div className="hero-flex">
+          <div className="hero-image-2 _2"></div>
         </div>
       </div>
     </div>

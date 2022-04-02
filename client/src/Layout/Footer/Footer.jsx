@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons"
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons"
 
 export default function Footer() {
   function scrollToTop() {
@@ -27,16 +30,16 @@ export default function Footer() {
           </div>
           <div className="social-icons">
             <a href="https://instagram.com/cathy.loerzel" target="_blank" rel="noreferrer">
-              <div className="social-icon instagram w-inline-block"></div>
+              <div className="social-icon instagram w-inline-block"><FontAwesomeIcon icon={faInstagram} /></div>
             </a>
             <a href="https://twitter.com/cathyloerzel" target="_blank" rel="noreferrer">
-              <div className="social-icon twitter w-inline-block"></div>
+              <div className="social-icon twitter w-inline-block"><FontAwesomeIcon icon={faTwitter} /></div>
             </a>
           </div>
         </div>
         <div className="footer-notice">
           <div className="footer-notice-box"></div>
-          <div className="to-top w-hidden-medium w-inline-block" onClick={scrollToTop}></div>
+          <div className="to-top w-hidden-medium w-inline-block" onClick={scrollToTop}><FontAwesomeIcon icon={faArrowUp} /></div>
         </div>
       </div>
     </footer>

@@ -19,8 +19,8 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div class="hero-flex">
-          <div class="hero-image _2"></div>
+        <div className="hero-flex">
+          <div className="hero-image _2"></div>
         </div>
       </div>
     </div>

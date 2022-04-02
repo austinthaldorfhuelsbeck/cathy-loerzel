@@ -232,7 +232,7 @@ h3 {
 /* CONTAINERS */
 .content-section {
   overflow: hidden;
-  padding-top: 75px;
+  padding-top: 15px;
   padding-bottom: 75px;
 }
 .content-section-alt {
@@ -959,6 +959,11 @@ h3 {
   margin: 10px;
 }
 /* EVENTS */
+.upcoming-section {
+  overflow: hidden;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
 .accordion {
   max-width: 900px;
   margin: 2rem auto;
@@ -1049,7 +1054,6 @@ h3 {
   margin-right: 10px;
   border-radius: 50%;
   background-color: #d6bbd3;
-  background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg");
   background-position: 50% 50%;
   background-size: 125px;
   background-repeat: no-repeat;
@@ -1058,18 +1062,14 @@ h3 {
 }
 .social-icon:hover {
   background-color: #ba9fb7;
-  background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg");
   background-size: 125px;
   background-repeat: no-repeat;
 }
-.social-icon.instagram {
-  background-color: #a69186;
-  background-image: url("https://cathy-loerzel-img.s3.us-west-2.amazonaws.com/instagram-2.svg");
-  background-size: 15px;
-}
+.social-icon.instagram,
 .social-icon.twitter {
+  padding: 4px 0px 0px 7px;
+  color: #fff;
   background-color: #a69186;
-  background-image: url("https://cathy-loerzel-img.s3.us-west-2.amazonaws.com/gorjeo-1.svg");
   background-size: 15px;
 }
 .footer-notice {
@@ -1103,7 +1103,6 @@ h3 {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   background-color: #a69186;
-  background-image: url("https://cathy-loerzel-img.s3.us-west-2.amazonaws.com/flecha-hacia-arriba.svg");
   background-position: 50% 50%;
   background-size: 13px;
   background-repeat: no-repeat;
@@ -1114,12 +1113,13 @@ h3 {
   background-color: #b99bb6;
 }
 .to-top {
+  padding: 4px 0px 0px 7px;
+  color: #fff;
   width: 32.6px;
   height: 30px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   background-color: #a69186;
-  background-image: url("https://cathy-loerzel-img.s3.us-west-2.amazonaws.com/flecha-hacia-arriba.svg");
   background-position: 50% 50%;
   background-size: 13px;
   background-repeat: no-repeat;
