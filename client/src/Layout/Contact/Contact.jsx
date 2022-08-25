@@ -4,7 +4,7 @@ import FeaturedContent from "../Components/FeaturedContent/FeaturedContent"
 export default function Contact() {
   return (
     <div>
-    <div className="hero-section mb-5">
+    {/* <div className="hero-section mb-5">
       <div className="content-wrapper w-container">
         <div className="hero-text-box-2">
           <div>
@@ -15,7 +15,7 @@ export default function Contact() {
           <div className="hero-image-2 _2"></div>
         </div>
       </div>
-    </div>
+    </div> */}
       <ContactForm />
       <FeaturedContent />
     </div>
