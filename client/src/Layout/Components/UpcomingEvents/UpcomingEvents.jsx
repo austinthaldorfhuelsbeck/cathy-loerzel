@@ -20,7 +20,7 @@ export default function UpcomingEvents() {
       {console.log("EVENTS: " + events[0])}
       <h3 className="lg-title">Upcoming Events</h3>
       <div className="my-5">
-        {events.map((event) => (
+        {events.slice(0,3).map((event) => (
           <AccordionItem key={event.title} item={event} />
         ))}
       </div>
