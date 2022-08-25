@@ -20,9 +20,9 @@ export default function NavBar() {
               <NavDropdown.Item href="/blog/writing">Writing</NavDropdown.Item>
               <NavDropdown.Item href="/blog/podcasts">Podcasts</NavDropdown.Item>
               <NavDropdown.Item href="/blog/teaching">Teaching</NavDropdown.Item>
-              <NavDropdown.Divider />
+              {/* <NavDropdown.Divider />
               <NavDropdown.Item href="/events">Events</NavDropdown.Item>
-              <NavDropdown.Item href="/coaching">Coaching</NavDropdown.Item>
+              <NavDropdown.Item href="/coaching">Coaching</NavDropdown.Item> */}
             </NavDropdown>
             <Nav.Link href="/contact" className="mx-2">Contact</Nav.Link>
           </Nav>
