@@ -14,7 +14,7 @@ export default function NavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/#about" className="mx-2">About</Nav.Link>
+            <Nav.Link href="/events" className="mx-2">Events</Nav.Link>
             <Nav.Link href="/redeeming-heartache" className="mx-2">Redeeming Heartache</Nav.Link>
             <NavDropdown title="Resources" id="basic-nav-dropdown" className="mx-2">
               <NavDropdown.Item href="/blog/writing">Writing</NavDropdown.Item>
