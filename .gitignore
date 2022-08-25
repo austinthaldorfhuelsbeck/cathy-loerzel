@@ -25,3 +25,6 @@ yarn-error.log*
 node_modules
 
 .vercel
+
+# data
+/client/src/data/data.jsx

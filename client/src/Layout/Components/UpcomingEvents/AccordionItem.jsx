@@ -15,11 +15,11 @@ export default function AccordionItem({ item }) {
     <div className="">
       <div className="accordion-title" onClick={flipIsActive}>
         <h2>{item.name}</h2>
+        <h2 className="mx-4">{item.date}</h2>
         <div>{isActive ? "-" : "+"}</div>
       </div>
       {isActive && (
         <>
-          <h2 className="mx-4">{item.date}</h2>
           <div className="accordion-content" dangerouslySetInnerHTML={{ __html: item.content }}></div>
           <a href={item.url} target="_blank" rel="noreferrer">
             <button className="button w-button">Learn More</button>

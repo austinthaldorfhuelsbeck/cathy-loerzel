@@ -14,7 +14,7 @@ export default function Home() {
       <UpcomingEvents />
       <NewsletterForm />
       <ProductBanner />
-      <About />
+      {/* <About /> */}
       <ContactForm />
       <FeaturedBlog />
       <FeaturedContent />

@@ -66,7 +66,7 @@ export default function ContactForm() {
         )}
         <div className="_25-column"></div>
         <div className="form-block" data-aos="fade-up">
-          <div>Reach out about your speaking engagement or event.</div>
+          <div>Reach out about working with Cathy.</div>
           <div className="top-border _20">
             <form
               name="wf-form-Contact-Form"
