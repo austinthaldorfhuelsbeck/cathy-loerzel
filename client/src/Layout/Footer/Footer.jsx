@@ -18,6 +18,7 @@ export default function Footer() {
           <div className="_90-column">
             <div className="footer-links">
               <Link to="/" className="footer-link" onClick={scrollToTop}>Home</Link>
+              <Link to="/about" className="footer-link" onClick={scrollToTop}>About</Link>
               <Link to="/blog" className="footer-link" onClick={scrollToTop}>Blog</Link>
               <Link to="/blog/writing" className="footer-link-alt" onClick={scrollToTop}>&#10551;Writing</Link>
               <Link to="/blog/podcasts" className="footer-link-alt" onClick={scrollToTop}>&#10551;Podcasts</Link>

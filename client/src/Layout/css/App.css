@@ -1297,6 +1297,16 @@ h3 {
   .form-block-2 button {
     width: 100px;
   }
+  .hero-image {
+    right: 0px;
+    width: 100%;
+    height: 500px;
+  }
+  .hero-text-box {
+    top: 80px;
+    width: 70%;
+    height: 350px;
+  }
 }
 @media screen and (max-width: 767px) {
   .w-row,
@@ -1327,9 +1337,10 @@ h3 {
   .hero-image {
     right: 0px;
     width: 100%;
+    height: 500px;
   }
   .hero-text-box {
-    top: 310px;
+    top: 180px;
     width: 70%;
     height: 250px;
   }

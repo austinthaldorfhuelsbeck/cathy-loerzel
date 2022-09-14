@@ -1,6 +1,6 @@
 import Hero from "./Hero"
 import NewsletterForm from "../Components/NewsletterForm"
-import ProductBanner from "../Components/ProductBanner"
+// import ProductBanner from "../Components/ProductBanner"
 // import About from "./About"
 import Events from "../Events/Events"
 import ContactForm from "../Components/ContactForm"
@@ -13,7 +13,7 @@ export default function Home() {
       <Hero />
       <Events />
       <NewsletterForm />
-      <ProductBanner />
+      {/* <ProductBanner /> */}
       {/* <About /> */}
       <ContactForm />
       <FeaturedBlog />
