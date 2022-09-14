@@ -396,6 +396,7 @@ h3 {
 .blog-header {
   color: rgba(0, 0, 0, 0.7);
   font-size: 8vw;
+  line-height: 5rem;
   text-transform: uppercase;
 }
 .blog-text-box {
@@ -932,6 +933,7 @@ h3 {
 }
 .intro-text-box {
   padding: 60px 23px;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.28);
 }
 .title-link {
