@@ -29,7 +29,7 @@ export default function Events({ type }) {
   ))
 
   return (
-    <>
+    <div className="w-container upcoming-section">
       {err}
       <h3 className="lg-title">Upcoming {type ? capitalizeFirstLetter(type) : "Events"}</h3>
       {type ? (
@@ -40,6 +40,6 @@ export default function Events({ type }) {
       <div className="my-5">
         {filteredEvents}
       </div>
-    </>
+    </div>
   )
 }

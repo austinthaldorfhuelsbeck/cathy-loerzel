@@ -6,7 +6,7 @@ export default function AccordionItem({ item }) {
   // Active on Events page by default
   const history = useHistory()
   useEffect(() => {
-    if (history.location.pathname === "/events") setIsActive(true)
+    if (history.location.pathname.includes("/events")) setIsActive(true)
   }, [history])
 
   const flipIsActive = () => setIsActive(!isActive)

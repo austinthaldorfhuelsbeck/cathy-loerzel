@@ -80,9 +80,7 @@ export default function EventsLayout() {
     <div>
       <EventsBanner />
       <EventsHeader type={type} />
-      <div className="w-container upcoming-section">
-        <EventsList type={type} />
-      </div>
+      <EventsList type={type} />
       <EventTypes />
       <NewsletterForm />
       <ProductBanner />
