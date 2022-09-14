@@ -35,6 +35,9 @@ export default function Layout() {
         <Route path="/coaching">
           <Coaching />
         </Route>
+        <Route path="/events/:type">
+          <EventsLayout />
+        </Route>
         <Route path="/events">
           <EventsLayout />
         </Route>
