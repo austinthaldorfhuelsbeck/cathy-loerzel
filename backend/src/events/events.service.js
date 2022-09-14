@@ -7,6 +7,12 @@ const knex = require("../db/connection")
 function list() {
   return knex("events").select("*").orderBy("event_id")
 }
+function listType(type) {
+  return knex("events as e")
+    .select("*")
+    .where({ "e.type": type})
+    .orderBy("e.event_id")
+}
 function create(event) {
   return knex("events")
     .insert(event)
@@ -28,6 +34,7 @@ function destroy(id) {
 
 module.exports = {
   list,
+  listType,
   create,
   read,
   update,
