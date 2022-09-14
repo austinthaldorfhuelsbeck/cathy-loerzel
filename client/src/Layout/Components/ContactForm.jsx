@@ -4,7 +4,7 @@ import emailjs from 'emailjs-com'
 import{ init } from 'emailjs-com'
 init("user_CvpPf1sJ7rZo6giCrFhIr")
 
-export default function ContactForm() {
+export default function ContactForm({ type }) {
   const [isActive, setIsActive] = useState(false)
   // Title active only on home page
   const history = useHistory()
@@ -13,7 +13,7 @@ export default function ContactForm() {
   }, [history])
 
   // FORM STATE
-  const initialFormState = {
+  let initialFormState = {
     name: "",
     company: "",
     phone: "",
@@ -22,6 +22,7 @@ export default function ContactForm() {
     audience: "",
     location: "",
   }
+  initialFormState = (type) ? {...initialFormState, type: type} : initialFormState
   const [formData, setFormData] = useState({ ...initialFormState })
   const [isThankYou, setIsThankYou] = useState(false)
 
@@ -66,7 +67,7 @@ export default function ContactForm() {
         )}
         <div className="_25-column"></div>
         <div className="form-block" data-aos="fade-up">
-          <div>Reach out about working with Cathy.</div>
+          <div>Reach out today.</div>
           <div className="top-border _20">
             <form
               name="wf-form-Contact-Form"
@@ -111,16 +112,30 @@ export default function ContactForm() {
                 value={formData.email}
                 required
               />
+              <select
+                name="type"
+                className="white-text text-field-4 w-input"
+                onChange={handleChange}
+                value={formData.type}
+                required
+              >
+                <option value="init" disabled selected>type of event *</option>
+                <option value="" disabled>---</option>
+                <option value="coaching">Coaching</option>
+                <option value="intensives">Intensives</option>
+                <option value="conferences">Speaking Engagements</option>
+                <option value="other">Other</option>
+              </select>
               <textarea
                 className="textarea-2 w-input"
                 maxLength="5000"
                 name="message"
-                placeholder="description of the event *"
+                placeholder="details for cathy *"
                 onChange={handleChange}
                 value={formData.message}
                 required
               ></textarea>
-              <input
+              {(formData.type === "conferences") && <input
                 type="number"
                 className="text-field-4 w-input"
                 maxLength="5"
@@ -128,8 +143,8 @@ export default function ContactForm() {
                 placeholder="audience size"
                 onChange={handleChange}
                 value={formData.audience}
-              />
-              <input
+              />}
+              {(formData.type !== "intensives") && <input
                 type="text"
                 className="text-field-4 w-input"
                 maxLength="256"
@@ -137,7 +152,7 @@ export default function ContactForm() {
                 placeholder="location"
                 onChange={handleChange}
                 value={formData.location}
-              />
+              />}
               <button type="submit" className="submit-button-3 w-button">Let's talk!</button>
             </form>
             <ThankYou />

@@ -14,8 +14,13 @@ export default function NavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/events" className="mx-2">Events</Nav.Link>
-            <Nav.Link href="/redeeming-heartache" className="mx-2">Redeeming Heartache</Nav.Link>
+            {/* <Nav.Link href="/events" className="mx-2">Events</Nav.Link> */}
+            <NavDropdown title="Story Work" id="basic-nav-dropdown" className="mx-2">
+              <NavDropdown.Item href="/events/coaching">Coaching</NavDropdown.Item>
+              <NavDropdown.Item href="/events/intensives">Intensives</NavDropdown.Item>
+              <NavDropdown.Item href="/events/retreats">Retreats</NavDropdown.Item>
+              <NavDropdown.Item href="/events/conferences">Conferences</NavDropdown.Item>
+            </NavDropdown>
             <NavDropdown title="Resources" id="basic-nav-dropdown" className="mx-2">
               <NavDropdown.Item href="/blog/writing">Writing</NavDropdown.Item>
               <NavDropdown.Item href="/blog/podcasts">Podcasts</NavDropdown.Item>
@@ -24,6 +29,7 @@ export default function NavBar() {
               <NavDropdown.Item href="/events">Events</NavDropdown.Item>
               <NavDropdown.Item href="/coaching">Coaching</NavDropdown.Item> */}
             </NavDropdown>
+            <Nav.Link href="/redeeming-heartache" className="mx-2">Redeeming Heartache</Nav.Link>
             <Nav.Link href="/contact" className="mx-2">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>

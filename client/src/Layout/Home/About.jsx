@@ -1,5 +1,10 @@
+import NewsletterForm from "../Components/NewsletterForm"
+import ContactForm from "../Components/ContactForm"
+import FeaturedBlog from "../Components/FeaturedContent/FeaturedBlog"
+import FeaturedContent from "../Components/FeaturedContent/FeaturedContent"
+
 export default function About() {
-  return (
+  const AboutContent = () => (
     <div
       id="about"
       className="about-section w-clearfix wf-section"
@@ -21,7 +26,7 @@ export default function About() {
         Allender in 2010. I have spent the last decade helping to create the Trauma Informed 
         Narrative Therapy methodology, design the Allender Center programs, concretize our 
         group theory, facilitate and teach. This past year, Dan and I wrote <strong>
-          Redeeming Heartache</strong> and it was a joy to create. (You should buy it)
+          <a href="/redeeming-heartache">Redeeming Heartache</a></strong> and it was a joy to create. (You should buy it)
         <br />
       </p>
       <p className="about-text">
@@ -32,5 +37,15 @@ export default function About() {
         <br />
       </p>
     </div>
+  )
+
+  return (
+    <>
+      <AboutContent />
+      <NewsletterForm />
+      <ContactForm />
+      <FeaturedBlog />
+      <FeaturedContent />
+    </>
   )
 }

@@ -6,7 +6,7 @@ export default function AccordionItem({ item }) {
   // Active on Events page by default
   const history = useHistory()
   useEffect(() => {
-    if (history.location.pathname === "/events") setIsActive(true)
+    if (history.location.pathname.includes("/events")) setIsActive(true)
   }, [history])
 
   const flipIsActive = () => setIsActive(!isActive)
@@ -14,7 +14,7 @@ export default function AccordionItem({ item }) {
   return (
     <div className="">
       <div className="accordion-title" onClick={flipIsActive}>
-        <h2>{item.name}</h2>
+        <h2>{(item.name.length > 100 ? item.name.slice(0, 100) + "..." : item.name)}</h2>
         <h2 className="mx-4">{item.date}</h2>
         <div>{isActive ? "-" : "+"}</div>
       </div>

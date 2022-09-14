@@ -1,7 +1,7 @@
 body {
   font-family: "Cormorant Garamond", sans-serif;
   color: #5f4d5d;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 30px;
 }
 .contain {
@@ -396,6 +396,7 @@ h3 {
 .blog-header {
   color: rgba(0, 0, 0, 0.7);
   font-size: 8vw;
+  line-height: 5rem;
   text-transform: uppercase;
 }
 .blog-text-box {
@@ -932,6 +933,7 @@ h3 {
 }
 .intro-text-box {
   padding: 60px 23px;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.28);
 }
 .title-link {
@@ -1295,6 +1297,16 @@ h3 {
   .form-block-2 button {
     width: 100px;
   }
+  .hero-image {
+    right: 0px;
+    width: 100%;
+    height: 500px;
+  }
+  .hero-text-box {
+    top: 80px;
+    width: 70%;
+    height: 350px;
+  }
 }
 @media screen and (max-width: 767px) {
   .w-row,
@@ -1325,9 +1337,10 @@ h3 {
   .hero-image {
     right: 0px;
     width: 100%;
+    height: 500px;
   }
   .hero-text-box {
-    top: 310px;
+    top: 180px;
     width: 70%;
     height: 250px;
   }

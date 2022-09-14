@@ -3,9 +3,10 @@ import { Route, Switch } from "react-router-dom"
 import NavBar from "./Components/NavBar"
 
 import Home from "./Home/Home"
+import About from "./Home/About"
 import BlogLayout from "./Blog/BlogLayout"
 import Coaching from "./Coaching/Coaching"
-import Events from "./Events/Events"
+import EventsLayout from "./Events/EventsLayout"
 import RedeemingHeartache from "./RedeemingHeartache/RedeemingHeartache.jsx"
 import Contact from "./Contact/Contact"
 
@@ -19,6 +20,9 @@ export default function Layout() {
       <Switch>
         <Route exact path="/">
           <Home />
+        </Route>
+        <Route path="/about">
+          <About />
         </Route>
         <Route path="/blog/topic/:topic">
           <BlogLayout />
@@ -35,8 +39,11 @@ export default function Layout() {
         <Route path="/coaching">
           <Coaching />
         </Route>
+        <Route path="/events/:type">
+          <EventsLayout />
+        </Route>
         <Route path="/events">
-          <Events />
+          <EventsLayout />
         </Route>
         <Route path="/redeeming-heartache">
           <RedeemingHeartache />

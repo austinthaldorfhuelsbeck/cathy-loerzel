@@ -48,7 +48,13 @@ async function isValidEvent(req, res, next) {
  * Handlers for events resources
  */
 async function list(req, res) {
-  let data = await service.list()
+  const type = req.query.type
+  let data = []
+  if (type) {
+    data = await service.listType(type)
+  } else {
+    data = await service.list()
+  }
   res.json({ data })
 }
 async function create(req, res) {
