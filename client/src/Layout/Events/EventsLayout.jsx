@@ -1,17 +1,37 @@
+import { useParams } from "react-router-dom"
+
 import UpcomingEvents from "../Components/UpcomingEvents/UpcomingEvents"
 import NewsletterForm from "../Components/NewsletterForm"
 import ProductBanner from "../Components/ProductBanner"
 import FeaturedContent from "../Components/FeaturedContent/FeaturedContent"
 
 export default function EventsLayout() {
+  let { type } = useParams()
+
+  const EventsBanner = () => (
+    <>
+      <div className="blog-banner">
+        <div className="blog-text-box">
+          <h1 className="blog-header" data-aos="fade" data-aos-duration="100000">
+            {type ? type : ""}
+          </h1>
+        </div>
+      </div>
+      <img
+        src="https://storage.googleapis.com/cathy-loerzel-img/Cathy-blogbanner-notext.jpg"
+        alt="Cathy Loerzel's Blog"
+        className="image"
+        style={{ width:"100%" }}
+      />
+    </>
+  )
+
   return (
     <div>
-      <img
-        src="https://cdn.theallendercenter.org/wp-content/uploads/2016/02/intimate-mystery-banner-1600x350.jpg"
-        alt="Intimate Mystery"
-        className="image-blog"
-      />
-      <UpcomingEvents />
+      <EventsBanner />
+      <div className="w-container upcoming-section">
+        <UpcomingEvents />
+      </div>
       <NewsletterForm />
       <FeaturedContent />
       <ProductBanner />
