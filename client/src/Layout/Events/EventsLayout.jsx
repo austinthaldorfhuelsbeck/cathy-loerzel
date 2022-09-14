@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom"
 
-import UpcomingEvents from "../Components/UpcomingEvents/UpcomingEvents"
+import Events from "./Events"
 import NewsletterForm from "../Components/NewsletterForm"
 import ProductBanner from "../Components/ProductBanner"
 import FeaturedContent from "../Components/FeaturedContent/FeaturedContent"
@@ -30,7 +30,7 @@ export default function EventsLayout() {
     <div>
       <EventsBanner />
       <div className="w-container upcoming-section">
-        <UpcomingEvents />
+        {type ? <Events type={type} /> : <Events />}
       </div>
       <NewsletterForm />
       <FeaturedContent />
