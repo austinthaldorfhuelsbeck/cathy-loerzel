@@ -3,7 +3,7 @@ import NewsletterForm from "../Components/NewsletterForm"
 import ProductBanner from "../Components/ProductBanner"
 import FeaturedContent from "../Components/FeaturedContent/FeaturedContent"
 
-export default function Events() {
+export default function EventsLayout() {
   return (
     <div>
       <img
