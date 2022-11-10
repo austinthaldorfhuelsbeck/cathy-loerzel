@@ -22,11 +22,13 @@ export default function Events({ type }) {
   )
 
   const filteredEvents = events
-  .filter((event) => event.isUpcoming)
+  .filter((event) => {
+    const eventDate = new Date(event.date)
+    const today = new Date()
+    return eventDate > today
+  })
   .slice(location.pathname === "/events" ? "()" : "(0, 3)")
-  .map((event) => (
-    event.isUpcoming && <AccordionItem key={event.title} item={event} />
-  ))
+  .map((event) => <AccordionItem key={event.title} item={event} />)
 
   return (
     <div className="w-container upcoming-section">
