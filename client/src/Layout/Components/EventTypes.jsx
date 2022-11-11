@@ -8,6 +8,11 @@ export default function EventTypes() {
     })
   }
 
+  const header =
+    window.location.pathname === "/"
+    ? <br />
+    : <h1>Event Types</h1>
+
   const TypeSort = () => (
     <div className="w-container" data-aos="fade-up">
       <div className="flex-center">
@@ -50,7 +55,7 @@ export default function EventTypes() {
   return (
     <div className="w-container">
       <section id="visual-nav" className="cards=section">
-        <h1>Event Types</h1>
+        {header}
         <TypeSort />
       </section>
     </div>
