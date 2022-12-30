@@ -33,7 +33,7 @@ export default function Events({ type }) {
   return (
     <div className="w-container upcoming-section">
       {err}
-      <h3 className="lg-title">Upcoming {type ? capitalizeFirstLetter(type) : "Events"}</h3>
+      <h3 className="lg-title upcoming-events-header">Upcoming {type ? capitalizeFirstLetter(type) : "Events"}</h3>
       {type ? (
         <Link to="/events">
           <em>&larr; Back to all events</em>

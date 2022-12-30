@@ -30,9 +30,9 @@ export default function Footer() {
             </div>
           </div>
           <div className="social-icons">
-            <a href="https://instagram.com/cathy.loerzel" target="_blank" rel="noreferrer">
+            {/* <a href="https://instagram.com/cathy.loerzel" target="_blank" rel="noreferrer">
               <div className="social-icon instagram w-inline-block"><FontAwesomeIcon icon={faInstagram} /></div>
-            </a>
+            </a> */}
             {/* <a href="https://twitter.com/cathyloerzel" target="_blank" rel="noreferrer">
               <div className="social-icon twitter w-inline-block"><FontAwesomeIcon icon={faTwitter} /></div>
             </a> */}

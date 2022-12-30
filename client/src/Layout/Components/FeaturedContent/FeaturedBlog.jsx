@@ -23,7 +23,7 @@ export default function FeaturedBlog() {
   return (
     <div className="mb-4 w-container" data-aos="fade-up">
       {err}
-      <h1>Featured Blog</h1>
+      <h1 className="featured-blog-header">Featured Blog</h1>
       <Link
         to={`/blog/${featuredBlog.category}/${featuredBlog.blog_id}`}
         className="text-img-container"

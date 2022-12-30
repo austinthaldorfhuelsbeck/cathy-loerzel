@@ -82,6 +82,7 @@ h3 {
   font-style: italic;
   font-weight: 600;
   text-decoration: none;
+  line-height: 26px;
 }
 .text-link-2 {
   padding-bottom: 8px;
@@ -173,18 +174,22 @@ h3 {
 }
 .signature {
   position: static;
-  max-width: 40%;
-  padding-top: 0.5rem;
+  max-width: 60%;
+  padding-top: 0;
 }
 
 /* NAV */
 .navbar-brand {
   height: 100%;
   max-width: 600px;
+  padding-top: 0;
+}
+.navbar-expand-lg {
+  padding: 0;
 }
 .nav-link {
   overflow: hidden;
-  padding-top: 46px;
+  padding-top: 26px;
   height: 116px;
   width: auto;
   -webkit-transition: background-color 200ms ease;
@@ -220,12 +225,6 @@ h3 {
 @media screen and (max-width: 1400px) {
   .nav-link {
     width: 8rem;
-  }
-}
-@media screen and (max-width: 991px) {
-  .nav-link .nav-link-alt {
-    height: 70px;
-    padding-top: 20px;
   }
 }
 
@@ -269,7 +268,8 @@ h3 {
   width: 35%;
 }
 ._49-column-2 {
-  display: block;
+  display: flex;
+  justify-content: center;
   width: 49%;
   max-width: 689px;
   margin-right: auto;
@@ -399,6 +399,9 @@ h3 {
   line-height: 5rem;
   text-transform: uppercase;
 }
+.featured-blog-header {
+  padding: 16px;
+}
 .blog-text-box {
   position: absolute;
   top: 90px;
@@ -486,49 +489,49 @@ h3 {
   margin-bottom: 30px;
   padding-left: 20px;
   border-style: solid;
-  border-color: #fff;
+  border-color: rgb(0, 0, 0);
   border-bottom-width: 1px;
   background-color: transparent;
   font-family: Roboto, sans-serif;
   color: #000;
 }
 .text-field-4::-webkit-input-placeholder {
-  color: #fff;
+  color: rgb(157, 157, 157);
 }
 .text-field-4:-ms-input-placeholder {
-  color: #fff;
+  color: rgb(172, 172, 172);
 }
 .text-field-4::-ms-input-placeholder {
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 .text-field-4::placeholder {
-  color: #fff;
+  color: rgb(131, 131, 131);
 }
 .textarea-2 {
   margin-bottom: 25px;
   padding-top: 20px;
   padding-bottom: 41px;
   padding-left: 20px;
-  border: 1px solid #fff;
+  border: 1px solid rgb(0, 0, 0);
   background-color: transparent;
   font-family: Roboto, sans-serif;
   color: #000;
 }
 .textarea-2::-webkit-input-placeholder {
   font-family: Roboto, sans-serif;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 .textarea-2:-ms-input-placeholder {
   font-family: Roboto, sans-serif;
-  color: #fff;
+  color: rgb(0, 0, 0)255, 255, 255);
 }
 .textarea-2::-ms-input-placeholder {
   font-family: Roboto, sans-serif;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 .textarea-2::placeholder {
   font-family: Roboto, sans-serif;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 .form-block-2 button {
   width: 20%;
@@ -541,7 +544,7 @@ h3 {
   border-bottom-right-radius: 3px;
   background-color: #934a26;
   font-family: Roboto, sans-serif;
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-size: 11px;
   line-height: 15px;
   font-weight: 700;
@@ -615,7 +618,7 @@ h3 {
 }
 .hero-text-box {
   position: absolute;
-  top: 0px;
+  top: -100px;
   right: 0px;
   bottom: 0px;
   z-index: 10;
@@ -624,7 +627,7 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   width: 44%;
-  height: 450px;
+  height: 375px;
   max-width: 720px;
   margin-top: 110px;
   padding-right: 40px;
@@ -637,7 +640,7 @@ h3 {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #1f353b;
+  background-color: #1f353bc9;
   width: 45%;
   margin-right: 5%;
 }
@@ -661,16 +664,6 @@ h3 {
   width: 45%;
   margin-right: 5%;
 }
-@media screen and (max-width: 991px) {
-  .hero-text-box-2 {
-    right: 350px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .hero-text-box-2 {
-    right: 250px;
-  }
-}
 @media screen and (max-width: 500px) {
   .hero-text-box-2 {
     right: 200px;
@@ -692,9 +685,10 @@ h3 {
 }
 .hero-image {
   position: relative;
-  right: -65px;
+  right: -5px;
+  top: -30px;
   width: 70%;
-  height: 675px;
+  height: 425px;
   background-image: url("https://storage.googleapis.com/cathy-loerzel-img/Cathy-2020-90.jpg");
   background-position: 0px 27%;
   background-size: cover;
@@ -769,6 +763,11 @@ h3 {
 @media screen and (max-width: 650px) {
   .myCarousel {
     height: 35rem;
+  }
+}
+@media screen and (max-width: 630px) {
+  #visual-nav {
+    display: none;
   }
 }
 .carousel .control-dots {
@@ -932,7 +931,7 @@ h3 {
   background-size: cover;
 }
 .intro-text-box {
-  padding: 60px 23px;
+  padding: 40px 23px;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.28);
 }
@@ -997,7 +996,7 @@ h3 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
+  -webkit-box-pack: space-evenly;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -1286,7 +1285,7 @@ h3 {
 
 @media screen and (max-width: 991px) {
   .w-container {
-    max-width: 728px;
+    max-width: 828px;
   }
   .embed-video {
     max-width: 528px;
@@ -1297,18 +1296,49 @@ h3 {
   .form-block-2 button {
     width: 100px;
   }
+  .signature {
+    max-width: 40%;
+  }
   .hero-image {
-    right: 0px;
-    width: 100%;
-    height: 500px;
+    right: 7%;
+    width: 60vw;
+    height: 350px;
   }
   .hero-text-box {
-    top: 80px;
-    width: 70%;
+    margin-top: 0px;
+    top: 0px;
+    right: -7%;
+    width: 50vw;
     height: 350px;
+  }
+  .hero-text-box-2 {
+    right: 350px;
+  }
+  .nav-link {
+    height: 55px;
+    width: 50%;
+  }
+  .nav-link .nav-link-alt {
+    height: 70px;
+    padding-top: 20px;
+  }
+  .title-link {
+    font-size: 100%;
+  }
+  .intro-text-box {
+    padding: 20px 0px 20px 10px;
+  }
+  .upcoming-section {
+    padding: 0;
+  }
+  .upcoming-events-header {
+    display: none;
   }
 }
 @media screen and (max-width: 767px) {
+  .hero-text-box-2 {
+    right: 250px;
+  }
   .w-row,
   .w-container .w-row {
     margin-left: 0;
@@ -1330,27 +1360,48 @@ h3 {
   }
   .lg-title {
     line-height: 5rem;
+    font-size: 200%;
+    padding-left: 1rem;
   }
   .footer-links {
     display: none;
   }
   .hero-image {
     right: 0px;
-    width: 100%;
-    height: 500px;
+    width: 100vw;
+    height: 320px;
   }
   .hero-text-box {
-    top: 180px;
-    width: 70%;
-    height: 250px;
+    margin-top: 0;
+    right: -40px;
+    top: 100px;
+    width: 100%;
+    height: 150px;
   }
   .h1-white {
     font-size: 30px;
     line-height: 28px;
   }
+  .navbar-brand {
+    width: 80%;
+  }
+  .text-link {
+    display: none;
+  }
+  .form-block {
+    width: 90%;
+  }
+  .center-box {
+    width: 80%;
+    line-height: 150%;
+  }
 }
 @media screen and (max-width: 479px) {
   .content-wrapper {
     direction: ltr;
+  }
+  .h1-white {
+    font-size: 22px;
+    line-height: 20px;
   }
 }

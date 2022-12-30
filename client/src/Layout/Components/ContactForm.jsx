@@ -114,12 +114,13 @@ export default function ContactForm({ type }) {
               />
               <select
                 name="type"
-                className="white-text text-field-4 w-input"
+                className="text-field-4 w-input"
                 onChange={handleChange}
                 value={formData.type}
+                defaultValue="init"
                 required
               >
-                <option value="init" disabled selected>type of event *</option>
+                <option value="init" disabled>type of event *</option>
                 <option value="" disabled>---</option>
                 <option value="coaching">Coaching</option>
                 <option value="intensives">Intensives</option>
