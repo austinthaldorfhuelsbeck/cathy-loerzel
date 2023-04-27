@@ -120,10 +120,6 @@ export default function EventsLayout() {
           <p><em>Cost: $4,500</em></p>
           <p>Now booking 2023 dates, contact me for availability.</p>
           <br />
-          <p>Storywork Coaching Sessions:</p>
-          <br />
-          <p>9 Sessions where we will work on 3 childhood narratives as well as recent vinyets.</p>
-          <br />
         </div>
         <ContactForm type={type} />
       </>
