@@ -16,22 +16,6 @@ export default function EventTypes() {
   const TypeSort = () => (
     <div className="w-container" data-aos="fade-up">
       <div className="flex-center">
-        <div className="intro-box" style={{"width": "20%"}}>
-          <div className="intro-text-box">
-            <Link to="/events/coaching" className="title-link" onClick={scrollToTop}>Coaching</Link>
-            <div className="top-border _5">
-              <Link to="/events/coaching" className="text-link" onClick={scrollToTop}>Story Work and leadership coaching sessions</Link>
-            </div>
-          </div>
-        </div>
-        <div className="intro-box-alt1" style={{"width": "20%"}}>
-          <div className="intro-text-box">
-            <Link to="/events/intensives" className="title-link" onClick={scrollToTop}>Intensives</Link>
-            <div className="top-border _5">
-              <Link to="/events/intensives" className="text-link" onClick={scrollToTop}>Go deeper into your own story</Link>
-            </div>
-          </div>
-        </div>
         <div className="intro-box-alt2" style={{"width": "20%"}}>
           <div className="intro-text-box">
             <Link to="/events/retreats" className="title-link" onClick={scrollToTop}>Retreats</Link>
@@ -45,6 +29,22 @@ export default function EventTypes() {
             <Link to="/events/conferences" className="title-link" onClick={scrollToTop}>Conferences</Link>
             <div className="top-border _5">
               <Link to="/events/conferences" className="text-link" onClick={scrollToTop}>Opportunities to hear from Cathy</Link>
+            </div>
+          </div>
+        </div>
+        <div className="intro-box" style={{"width": "20%"}}>
+          <div className="intro-text-box">
+            <Link to="/events/coaching" className="title-link" onClick={scrollToTop}>Coaching</Link>
+            <div className="top-border _5">
+              <Link to="/events/coaching" className="text-link" onClick={scrollToTop}>Story Work and leadership coaching sessions</Link>
+            </div>
+          </div>
+        </div>
+        <div className="intro-box-alt1" style={{"width": "20%"}}>
+          <div className="intro-text-box">
+            <Link to="/events/intensives" className="title-link" onClick={scrollToTop}>Intensives</Link>
+            <div className="top-border _5">
+              <Link to="/events/intensives" className="text-link" onClick={scrollToTop}>Go deeper into your own story</Link>
             </div>
           </div>
         </div>
