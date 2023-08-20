@@ -16,10 +16,10 @@ export default function NavBar() {
           <Nav className="me-auto">
             {/* <Nav.Link href="/events" className="mx-2">Events</Nav.Link> */}
             <NavDropdown title="Story Work" id="basic-nav-dropdown" className="mx-2">
-              <NavDropdown.Item href="/events/coaching">Coaching</NavDropdown.Item>
-              <NavDropdown.Item href="/events/intensives">Intensives</NavDropdown.Item>
               <NavDropdown.Item href="/events/retreats">Retreats</NavDropdown.Item>
               <NavDropdown.Item href="/events/conferences">Conferences</NavDropdown.Item>
+              <NavDropdown.Item href="/events/coaching">Coaching</NavDropdown.Item>
+              <NavDropdown.Item href="/events/intensives">Intensives</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Resources" id="basic-nav-dropdown" className="mx-2">
               <NavDropdown.Item href="/blog/writing">Writing</NavDropdown.Item>
