@@ -36,11 +36,6 @@ export default function ContactForm({ type }) {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      console.log(
-        "Service: ", process.env.REACT_APP_SERVICE_ID,
-        "Template: ", process.env.REACT_APP_TEMPLATE_ID,
-        "User: ", process.env.REACT_APP_USER_ID
-      )
       await emailjs.sendForm(
         process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID,

@@ -10,7 +10,7 @@ export default function Retreats() {
   return (
     <>
       <div className="n-container">
-        <h1 class="h1-redeeming-alt">Sacred Interruption</h1>
+        <h1 class="h1-redeeming-alt">Sacred Interruptions</h1>
         <h1 class="mini-title align-center">With Cathy Loerzel, Tracy Johnson, Heather Stringer, and Christy Bauman</h1>
       </div>
       <img
