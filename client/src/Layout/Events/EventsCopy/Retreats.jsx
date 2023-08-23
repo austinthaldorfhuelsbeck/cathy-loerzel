@@ -17,7 +17,10 @@ export default function Retreats() {
         src={headerImgURL}
         alt="Sacred Interruption"
         className="image-banner"
-        style={{ "object-position":"0% 15%" }}
+        style={{
+          "object-position":"0% 15%",
+          "opacity":"85%"
+        }}
       />
       <div className="n-container" data-aos="fade">
         <div className="row py-3 align-right">
