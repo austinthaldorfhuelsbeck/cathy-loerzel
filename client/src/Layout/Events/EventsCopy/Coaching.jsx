@@ -2,7 +2,7 @@ import React from 'react'
 import ContactForm from '../../Components/ContactForm'
 
 export default function Coaching() {
-  const headerImgURL = "https://storage.cloud.google.com/cathy-loerzel-img/F2FF90A9-7B8E-4D97-BA3D-3769639AF386_1_105_c.jpeg"
+  const headerImgURL = "https://storage.googleapis.com/cathy-loerzel-img/F2FF90A9-7B8E-4D97-BA3D-3769639AF386_1_105_c.jpeg"
 
   return (
     <>
