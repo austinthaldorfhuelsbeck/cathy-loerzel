@@ -1,11 +1,11 @@
 import React from 'react'
 
 export default function Retreats() {
-  const headerImgURL = "https://storage.cloud.google.com/cathy-loerzel-img/0070D2C1-9128-41EF-B439-6F6FA96BBB7C_1_105_c.jpeg"
-  const inlineIntroImgURL = "https://storage.cloud.google.com/cathy-loerzel-img/A371C13E-DBA0-4E09-9118-95A385023766_1_105_c.jpeg"
-  const inlineFallImgURL = "https://storage.cloud.google.com/cathy-loerzel-img/D16573AD-2AFD-4977-B265-3110C842145D_1_105_c.jpeg"
-  const inlineWinterImgURL = "https://storage.cloud.google.com/cathy-loerzel-img/7BCF3C1C-1576-4341-A58F-471AC0DDE71D_1_105_c.jpeg"
-  const inlineSpringImgURL = "https://storage.cloud.google.com/cathy-loerzel-img/A8B8007E-0277-4AD0-9B16-1470F3478C08_1_105_c.jpeg"
+  const headerImgURL = "https://storage.googleapis.com/cathy-loerzel-img/0070D2C1-9128-41EF-B439-6F6FA96BBB7C_1_105_c.jpeg"
+  const inlineIntroImgURL = "https://storage.googleapis.com/cathy-loerzel-img/A371C13E-DBA0-4E09-9118-95A385023766_1_105_c.jpeg"
+  const inlineFallImgURL = "https://storage.googleapis.com/cathy-loerzel-img/D16573AD-2AFD-4977-B265-3110C842145D_1_105_c.jpeg"
+  const inlineWinterImgURL = "https://storage.googleapis.com/cathy-loerzel-img/7BCF3C1C-1576-4341-A58F-471AC0DDE71D_1_105_c.jpeg"
+  const inlineSpringImgURL = "https://storage.googleapis.com/cathy-loerzel-img/A8B8007E-0277-4AD0-9B16-1470F3478C08_1_105_c.jpeg"
 
   return (
     <>
