@@ -8,7 +8,7 @@ export default function Coaching() {
     <>
       <div className="n-container">
         <h1 className="h1-redeeming-alt">StoryWork Coaching</h1>
-        <h1 className="mini-title align-center">Subtitle goes here</h1>
+        <h1 className="mini-title align-center">Healing Day by Day</h1>
       </div>
       <div className="n-container">
         <div className="row-10 py-3">
@@ -21,7 +21,7 @@ export default function Coaching() {
       </div>
       <div className="n-container">
         <h1 className="h1-redeeming-alt">Leadership Coaching</h1>
-        <h1 className="mini-title align-center">Subtitle goes here</h1>
+        <h1 className="mini-title align-center">Taking the Time You Need</h1>
       </div>
       <div className="n-container">
         <div className="row-10 py-3 align-right">
