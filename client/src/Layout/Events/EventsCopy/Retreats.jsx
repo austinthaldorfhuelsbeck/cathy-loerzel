@@ -10,14 +10,17 @@ export default function Retreats() {
   return (
     <>
       <div className="n-container">
-        <h1 class="h1-redeeming-alt">Sacred Interruptions</h1>
-        <h1 class="mini-title align-center">With Cathy Loerzel, Tracy Johnson, Heather Stringer, and Christy Bauman</h1>
+        <h1 className="h1-redeeming-alt">Sacred Interruptions</h1>
+        <h1 className="mini-title align-center">With Cathy Loerzel, Tracy Johnson, Heather Stringer, and Christy Bauman</h1>
       </div>
       <img
         src={headerImgURL}
         alt="Sacred Interruption"
         className="image-banner"
-        style={{ opacity:"85%" }}
+        style={{
+          "object-position":"0% 15%",
+          "opacity":"85%"
+        }}
       />
       <div className="n-container" data-aos="fade">
         <div className="row py-3 align-right">
